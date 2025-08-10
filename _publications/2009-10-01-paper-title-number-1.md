@@ -1,14 +1,27 @@
 ---
-title: "Paper Title Number 1"
+title: "Fluid-Induced Inhomogeneous Cr-spinel in Dunite and Wehrlite from the Duke Island Complex, Southeastern Alaska"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/2022-06-03-fluid-induced-inhomogeneous-cr-spinel
+excerpt: >
+  Cr-spinel with unmixed textures in dunite and wehrlite from the Duke Island Complex
+  shows complex inhomogeneous compositions formed by fluid interaction and unmixing processes.
+date: 2022-06-03
+venue: 'Minerals, MDPI'
+paperurl: 'https://www.mdpi.com/2075-163X/12/6/717'
+citation: >
+  Yang Luo, Ben-Xun Su, Joyashish Thakurta, Yan Xiao, Yang Bai. (2022).
+  "Fluid-Induced Inhomogeneous Cr-spinel in Dunite and Wehrlite from the Duke Island Complex, Southeastern Alaska."
+  <i>Minerals</i>, 12(6), 717.
 ---
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Cr-spinel [(Mg, Fe²⁺)(Cr, Al, Fe³⁺)₂O₄] is a common mineral in the ultramafic core of the Duke Island Complex in southeastern Alaska. This study identifies inhomogeneous Cr-spinel grains exhibiting unmixed textures in dunite and wehrlite. The Cr/(Al + Cr + Fe³⁺) ratio in inhomogeneous Cr-spinel is below 0.37, with two distinct compositions: Al-rich Cr-spinel and Fe³⁺-rich Cr-spinel varying from 11.8 to 28.6 wt.% Cr₂O₃.
+
+Three subtypes of inhomogeneous Cr-spinel are recognized: 
+- Type B1: complete separation 
+- Type B2: crystallographically oriented 
+- Type B3: irregular Al-rich rims around type B3 Cr-spinel.
+
+The unmixing process occurred near 600 °C due to a miscibility gap in spinel between Al-rich and Fe³⁺-rich phases. The pattern of unmixing is influenced by initial spinel composition, grain size, and cooling history. The initial inhomogeneous Cr-spinel composition likely formed via interaction of high-temperature fluid with olivine. These unmixed textures provide insight into fluid activity during the formation of Alaskan-type complexes.
+
+This work highlights the potential of Cr-spinel unmixing textures as proxies for high-temperature fluid activity in mantle-derived ultramafic complexes.
+

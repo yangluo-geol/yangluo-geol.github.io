@@ -9,7 +9,7 @@ redirect_from:
 
 I am Yang Luo, a Ph.D. student in Geochemistry in the Department of Earth Science at the University of California, Santa Barbara. My research includes petrology, geochemistry, geochronology. I am interested in plate tectonics, crustal evolution, and processes that shaped the early Earth.
 
-Righ now, I am working on the dating of glacial diamictites using detrital zircons to reveal the time of oscillating rising of oxygen in the atmosphere which has been stuied by recent researches.
+Righ now, I am working on the dating of glacial diamictites using detrital zircons to reveal the time of oscillating rising of oxygen in the atmosphere which has been studied by recent researches.
 
 This website showcases my academic work including publications, talks, teaching, and ongoing projects. You can explore my research interests and contributions in geochemistry, learn about my latest work, and find resources related to petrology and geochemistry. 
 

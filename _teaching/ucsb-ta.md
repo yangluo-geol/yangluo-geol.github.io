@@ -11,19 +11,19 @@ course_list:
   - code: "Earth 114"
     name: "Geomaterials"
     term: "Fall 2024"
-    skills: ["Optical mineralogy", "Crystallography", "Thin section analysis"]
+    main content: ["mineralogy", "Crystallography"]
   - code: "Earth 103"
     name: "Structural Geology"
     term: "Winter 2025" 
-    skills: ["Stereonet analysis", "Field mapping", "Stress/strain modeling"]
+    main content: ["Stereonet analysis", "Field data collection", "Stress/strain analysis"]
   - code: "Earth 161"
     name: "Earth Resources, Energy and Environment"
     term: "Spring 2025"
-    skills: ["Resource evaluation", "Sustainability analysis", "Geochemical data interpretation"]
+    main content: ["Sustainability analysis", "Geochemical data interpretation"]
   - code: "Earth 20"
     name: "Geological Catastrophes"
     term: "Summer 2025"
-    skills: ["Hazard assessment", "Risk modeling", "Emergency preparedness"]
+    main content: ["Hazard types", "Emergency preparedness"]
 ---
 
 ## Teaching Assistant Experience
@@ -37,23 +37,17 @@ course_list:
 {% endfor %}
 
 ### Key Responsibilities
-- Designed and led weekly laboratory sessions for 20-30 undergraduate students
-- Developed instructional materials including:
-  - Mineral identification flow charts
-  - Structural geology problem sets
-  - Resource evaluation case studies
+- Designed and led weekly laboratory sessions for undergraduate students
+- Developed instructional materials
 - Conducted office hours and provided individualized academic support
-- Evaluated and provided feedback on:
-  - Laboratory reports (15-20 pages each)
-  - Field mapping exercises
-  - Final research projects
+- Graded and provided feedback on:
+  - Laboratory reports/assignments
 - Assisted faculty with course development and curriculum improvements
 
 ### Teaching Philosophy
 My approach emphasizes:
 - Hands-on, experiential learning in laboratory and field settings
 - Integrating current research into undergraduate curriculum
-- Developing quantitative and analytical skills through geoscience applications
 - Fostering inclusive learning environments
 
 <style>

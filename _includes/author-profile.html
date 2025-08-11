@@ -20,6 +20,43 @@
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
+<div class="author__urls-wrapper">
+  <button class="btn btn--inverse">Contact</button>
+  <ul class="author__urls social-icons">
+    {% if author.email %}
+    <li>
+      <a href="mailto:{{ author.email }}">
+        <i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email
+      </a>
+    </li>
+    {% endif %}
+    
+    {% if author.orcid %}
+    <li>
+      <a href="https://orcid.org/{{ author.orcid }}" itemprop="sameAs" target="_blank">
+        <img src="{{ '/assets/images/orcid.png' | relative_url }}" width="16" alt="ORCID"> ORCID
+      </a>
+    </li>
+    {% endif %}
+    
+    {% if author.google_scholar %}
+    <li>
+      <a href="https://scholar.google.com/citations?user={{ author.google_scholar }}" itemprop="sameAs" target="_blank">
+        <i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar
+      </a>
+    </li>
+    {% endif %}
+    
+    {% if author.github %}
+    <li>
+      <a href="https://github.com/{{ author.github }}" itemprop="sameAs" target="_blank">
+        <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+      </a>
+    </li>
+    {% endif %}
+  </ul>
+</div>
+  
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">

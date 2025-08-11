@@ -2,11 +2,11 @@
 title: "Teaching Assistant - Earth Science Department"
 collection: teaching
 type: "Undergraduate Course Instruction"
-permalink: /teaching/2024-2025-ucsb-ta
+permalink: /teaching/ucsb-ta/
 venue: "University of California, Santa Barbara, Department of Earth Science"
 date: 2024-09-22
 daterange: "September 2024 - Present"
-location: "Santa Barbara, California"
+venue: "UC Santa Barbara"
 course_list:
   - code: "Earth 114"
     name: "Geomaterials"

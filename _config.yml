@@ -79,14 +79,14 @@ author:
   employer: "University of California, Santa Barbara"
   
   # Contact Information
-  email: "yangluo@ucsb.edu"
-  website: "https://yangluo-geol.github.io"
+  # email: "yangluo@ucsb.edu"
+  # website: "https://yangluo-geol.github.io"
   
   # Academic Profiles
   googlescholar: "https://scholar.google.com/citations?user=IOaZk2AAAAAJ"
   
   # Social Media
-  # github: "yangluo-geol"
+  github: "yangluo-geol"
   linkedin: "yangluo-geol"  # Remove if not available
 
 # ========================

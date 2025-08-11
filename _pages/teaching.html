@@ -1,12 +1,100 @@
 ---
-layout: archive
-title: "Teaching"
+layout: single
+title: "Teaching Experience"
 permalink: /teaching/
 author_profile: true
+breadcrumbs: true
 ---
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="teaching-container">
+  <h1>Teaching Experience</h1>
+  
+  <div class="teaching-intro">
+    <p>At UC Santa Barbara's Department of Earth Science, I've had the privilege of teaching and mentoring undergraduate students in various geology courses:</p>
+  </div>
+
+  <div class="teaching-list">
+    {% assign sorted_teaching = site.teaching | sort: 'date' | reverse %}
+    {% for post in sorted_teaching %}
+      <div class="teaching-item">
+        <h2 class="teaching-title">{{ post.title }}</h2>
+        
+        <div class="teaching-meta">
+          <span class="teaching-term">
+            <i class="fas fa-calendar-alt"></i> {{ post.date | date: "%B %Y" }}
+          </span>
+          <span class="teaching-venue">
+            <i class="fas fa-university"></i> {{ post.venue }}
+          </span>
+          <span class="teaching-type">
+            <i class="fas fa-chalkboard-teacher"></i> {{ post.type }}
+          </span>
+        </div>
+        
+        <div class="teaching-content">
+          {{ post.content }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .teaching-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .teaching-intro {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .teaching-list {
+    margin-top: 40px;
+  }
+  
+  .teaching-item {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .teaching-title {
+    color: #2a7ae2; /* UCSB navy blue */
+    margin-bottom: 15px;
+  }
+  
+  .teaching-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 0.95em;
+  }
+  
+  .teaching-meta i {
+    margin-right: 5px;
+    color: #ffd200; /* UCSB gold */
+  }
+  
+  .teaching-content {
+    line-height: 1.7;
+  }
+  
+  .teaching-content ul {
+    padding-left: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .teaching-meta {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+</style>

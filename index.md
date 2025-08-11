@@ -37,7 +37,7 @@ author_profile: true
     <h3><i class="fas fa-flask"></i> Analytical Methods</h3>
     <ul>
       <li>Scanning Electron Microscope (SEM-EDS/CL/BSE)</li>
-      <li>Electron microprobe analysis (EPMA)</li>
+      <li>Electron Microprobe Analysis (EPMA)</li>
       <li>Laser Ablation Inductively Coupled Plasma Mass Spectrometry (LA-ICP-MS)</li>
     </ul>
   </div>

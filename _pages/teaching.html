@@ -15,30 +15,49 @@ breadcrumbs: true
     <p>At UC Santa Barbara's Department of Earth Science, I've had the privilege of teaching and mentoring undergraduate students in various geology courses:</p>
   </div>
 
-  <div class="teaching-list">
-    {% assign sorted_teaching = site.teaching | sort: 'date' | reverse %}
-    {% for post in sorted_teaching %}
-      <div class="teaching-item">
-        <h2 class="teaching-title">{{ post.title }}</h2>
-        
-        <div class="teaching-meta">
-          <span class="teaching-term">
-            <i class="fas fa-calendar-alt"></i> {{ post.date | date: "%B %Y" }}
-          </span>
-          <span class="teaching-venue">
-            <i class="fas fa-university"></i> {{ post.venue }}
-          </span>
-          <span class="teaching-type">
-            <i class="fas fa-chalkboard-teacher"></i> {{ post.type }}
-          </span>
-        </div>
-        
-        <div class="teaching-content">
-          {{ post.content }}
-        </div>
+  <!-- Directly include content from ucsb-ta.md -->
+  {% assign ta_post = site.teaching | where: "title", "Teaching Assistant - Earth Science Department" | first %}
+  
+  {% if ta_post %}
+    <div class="teaching-item">
+      <h2 class="teaching-title">{{ ta_post.title }}</h2>
+      
+      <div class="teaching-meta">
+        <span class="teaching-term">
+          <i class="fas fa-calendar-alt"></i> {{ ta_post.daterange | default: ta_post.date | date: "%B %Y" }}
+        </span>
+        <span class="teaching-venue">
+          <i class="fas fa-university"></i> {{ ta_post.venue }}
+        </span>
+        <span class="teaching-type">
+          <i class="fas fa-chalkboard-teacher"></i> {{ ta_post.type }}
+        </span>
       </div>
-    {% endfor %}
-  </div>
+      
+      <div class="teaching-content">
+        <!-- Course List Section -->
+        <h3>Courses Taught</h3>
+        <ul>
+          {% for course in ta_post.course_list %}
+            <li>
+              <strong>{{ course.term }}:</strong> {{ course.code }} — <em>{{ course.name }}</em>
+              {% if course.skills %}
+                <div class="course-skills">Skills emphasized: {{ course.skills | join: ", " }}</div>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        
+        <!-- Responsibilities Section -->
+        <h3>Key Responsibilities</h3>
+        {{ ta_post.content | split: "### Key Responsibilities" | last | split: "### Teaching Philosophy" | first }}
+        
+        <!-- Teaching Philosophy Section -->
+        <h3>Teaching Approach</h3>
+        {{ ta_post.content | split: "### Teaching Philosophy" | last }}
+      </div>
+    </div>
+  {% endif %}
 </div>
 
 <style>
@@ -54,10 +73,6 @@ breadcrumbs: true
     line-height: 1.6;
   }
   
-  .teaching-list {
-    margin-top: 40px;
-  }
-  
   .teaching-item {
     margin-bottom: 50px;
     padding-bottom: 30px;
@@ -65,7 +80,7 @@ breadcrumbs: true
   }
   
   .teaching-title {
-    color: #2a7ae2; /* UCSB navy blue */
+    color: #2a7ae2;
     margin-bottom: 15px;
   }
   
@@ -80,15 +95,23 @@ breadcrumbs: true
   
   .teaching-meta i {
     margin-right: 5px;
-    color: #ffd200; /* UCSB gold */
+    color: #ffd200;
   }
   
   .teaching-content {
     line-height: 1.7;
   }
   
-  .teaching-content ul {
-    padding-left: 20px;
+  .teaching-content h3 {
+    margin-top: 25px;
+    color: #2a7ae2;
+  }
+  
+  .course-skills {
+    font-size: 0.85em;
+    color: #555;
+    margin-left: 1em;
+    font-style: italic;
   }
   
   @media (max-width: 768px) {

@@ -4,7 +4,8 @@ collection: teaching
 type: "Undergraduate courses"
 permalink: /teaching/2024-2025-ucsb-ta
 venue: "University of California, Santa Barbara — Department of Earth Science"
-date: 2024-09-01
+date: 2024-09-22
+daterange: "2024-09 to present"
 location: "Santa Barbara, CA, USA"
 ---
 
@@ -20,5 +21,3 @@ I served as a Teaching Assistant for the following undergraduate courses at UCSB
 - Assisting with field trips and hands-on activities.  
 - Grading assignments, exams, and lab reports.  
 - Providing academic support to students during office hours.  
-
----

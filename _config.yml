@@ -61,3 +61,10 @@ comments:
 staticman:
   allowedFields: ['name', 'email', 'url', 'message']
   branch: "gh-pages"
+
+
+ # 
+collections:
+  teaching:
+    output: true
+    permalink: /teaching/:path/

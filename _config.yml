@@ -85,7 +85,6 @@ author:
   
   # Social Media
   github: "yangluo-geol"
-  linkedin: "" # Add if desired
 
 # ========================
 # Research Configuration
@@ -128,7 +127,6 @@ theme_settings:
     
   navbar:
     sticky: true
-    logo: "assets/images/logo.png" # Optional
     
   footer:
     show_copyright: true

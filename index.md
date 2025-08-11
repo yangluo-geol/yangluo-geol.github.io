@@ -15,13 +15,18 @@ author_profile: true
   </div>
 
   <div class="profile-links">
-    <a href="mailto:yangluo@ucsb.edu?subject=Website%20Inquiry" class="btn-email">
-      <i class="fas fa-envelope"></i> Email
-    </a>
-    <a href="https://scholar.google.com/citations?user=IOaZk2AAAAAJ" class="btn-scholar" target="_blank" rel="noopener">
+    <!-- Enhanced Email Button with Copy Functionality -->
+    <div class="email-wrapper">
+      <button onclick="copyEmail()" class="btn-email">
+        <i class="fas fa-envelope"></i> Email
+      </button>
+      <span id="emailTooltip" class="tooltip">Click to copy yangluo@ucsb.edu</span>
+    </div>
+    
+    <a href="https://scholar.google.com/citations?user=IOaZk2AAAAAJ" class="btn-scholar" target="_blank" rel="noopener noreferrer">
       <i class="ai ai-google-scholar"></i> Scholar
     </a>
-    <a href="https://github.com/yangluo-geol" class="btn-github" target="_blank" rel="noopener">
+    <a href="https://github.com/yangluo-geol" class="btn-github" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-github"></i> GitHub
     </a>
   </div>
@@ -31,12 +36,12 @@ author_profile: true
     <ul>
       <li>Petrology and mineralogy</li>
       <li>Geochronology</li>
-      <li> Plate tectonics and Crustal evolution</li>
+      <li>Plate tectonics and Crustal evolution</li>
     </ul>
     
     <h3><i class="fas fa-flask"></i> Analytical Methods</h3>
     <ul>
-      <li>Scanning Electron Microscope (SEM-EDS/CL/BSE)</li>
+      <li>Scanning Electron Microscope (SEM)</li>
       <li>Electron Microprobe Analysis (EPMA)</li>
       <li>Laser Ablation Inductively Coupled Plasma Mass Spectrometry (LA-ICP-MS)</li>
     </ul>
@@ -48,6 +53,7 @@ author_profile: true
   max-width: 800px;
   margin: 2rem auto;
   padding: 0 1rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .profile-header {
@@ -70,6 +76,7 @@ author_profile: true
   margin: 0;
   font-size: 2.2rem;
   color: #333;
+  line-height: 1.2;
 }
 
 .profile-text h2 {
@@ -92,7 +99,13 @@ author_profile: true
   flex-wrap: wrap;
 }
 
-.btn-email, .btn-scholar, .btn-github {
+/* Email Button Styles */
+.email-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.btn-email {
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
   text-decoration: none;
@@ -102,17 +115,35 @@ author_profile: true
   gap: 8px;
   font-weight: 500;
   transition: all 0.2s ease;
-}
-
-.btn-email {
   background: linear-gradient(135deg, #d44638, #c53727);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .btn-scholar {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
   background: linear-gradient(135deg, #4285F4, #3367D6);
 }
 
 .btn-github {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
   background: linear-gradient(135deg, #333, #222);
 }
 
@@ -121,6 +152,43 @@ author_profile: true
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* Tooltip Styles */
+.tooltip {
+  visibility: hidden;
+  width: 180px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.email-wrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Research Section */
 .research-section {
   background: white;
   padding: 1.5rem;
@@ -135,13 +203,20 @@ author_profile: true
   display: flex;
   align-items: center;
   gap: 10px;
+  font-size: 1.25rem;
 }
 
 .research-section ul {
   padding-left: 1.5rem;
   line-height: 1.7;
+  margin-bottom: 0;
 }
 
+.research-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
 @media (max-width: 700px) {
   .profile-header {
     flex-direction: column;
@@ -157,5 +232,55 @@ author_profile: true
   .profile-links {
     justify-content: center;
   }
+  
+  .profile-text h1 {
+    font-size: 2rem;
+  }
 }
 </style>
+
+<script>
+function copyEmail() {
+  const email = 'yangluo@ucsb.edu';
+  const tooltip = document.getElementById('emailTooltip');
+  
+  // Try modern clipboard API first
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(email)
+      .then(() => {
+        tooltip.textContent = 'Copied to clipboard!';
+        setTimeout(() => {
+          tooltip.textContent = 'Click to copy yangluo@ucsb.edu';
+        }, 2000);
+      })
+      .catch(() => {
+        fallbackEmail();
+      });
+  } else {
+    fallbackEmail();
+  }
+  
+  function fallbackEmail() {
+    // Fallback for older browsers
+    const textarea = document.createElement('textarea');
+    textarea.value = email;
+    textarea.style.position = 'fixed';
+    document.body.appendChild(textarea);
+    textarea.select();
+    
+    try {
+      document.execCommand('copy');
+      tooltip.textContent = 'Copied to clipboard!';
+    } catch (err) {
+      window.location.href = 'mailto:' + email + '?subject=Website Inquiry';
+      return;
+    }
+    
+    document.body.removeChild(textarea);
+    
+    setTimeout(() => {
+      tooltip.textContent = 'Click to copy yangluo@ucsb.edu';
+    }, 2000);
+  }
+}
+</script>

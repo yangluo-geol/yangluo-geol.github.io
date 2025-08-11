@@ -35,7 +35,7 @@ plugins:
 collections:
   teaching:
     output: true
-    permalink: /teaching/:path/
+    permalink: /teaching/:name/
     sort_by: date
     sort_direction: descending
     show_collection_links: true
@@ -52,10 +52,11 @@ collections:
 # ========================
 defaults:
   - scope:
-      path: ""
+      path: "_pages/teaching.html"
       type: teaching
     values:
       layout: single
+      permalink: /teaching/
       author_profile: false
       share: true
       comments: false

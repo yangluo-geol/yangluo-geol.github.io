@@ -1,37 +1,114 @@
-
 ---
 layout: home
-title: "Yang Luo - Geochemistry PhD Student"
-author_profile: true
+title: "Yang Luo"
+permalink: /
 ---
 
-<div style="text-align: center; margin: 40px 0;">
-  <img src="/assets/images/profile.jpg" 
-       alt="Yang Luo" 
-       style="width:180px; height:180px; border-radius:50%; border:3px solid #2a7ae2; object-fit: cover;">
-  
-  <h1 style="margin: 15px 0 5px 0;">Yang Luo</h1>
-  <p style="color: #2a7ae2; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;">
-    Ph.D. Candidate in Geochemistry
-  </p>
-  <p style="color: #555;">UC Santa Barbara</p>
-  
-  <div style="margin: 25px 0;">
-    <a href="mailto:yangluo@ucsb.edu" 
-       style="padding: 8px 15px; background: #2a7ae2; color: white; border-radius: 4px; text-decoration: none;">
-      <i class="fas fa-envelope"></i> Contact
+<div class="profile-container">
+  <div class="profile-header">
+    <img src="/assets/images/profile.jpg" alt="Yang Luo" class="profile-image">
+    <div class="profile-text">
+      <h1>Yang Luo</h1>
+      <h2>Ph.D. Candidate in Geochemistry</h2>
+      <p>Department of Earth Science<br>University of California, Santa Barbara</p>
+    </div>
+  </div>
+
+  <div class="profile-links">
+    <a href="mailto:yangluo@ucsb.edu" class="btn-email">
+      <i class="fas fa-envelope"></i> Email
     </a>
+    <a href="https://orcid.org/0000-0001-8821-9899" class="btn-orcid" target="_blank">
+      <i class="ai ai-orcid"></i> ORCID
+    </a>
+    <a href="https://github.com/yangluo-geol" class="btn-github" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+  </div>
+
+  <div class="research-section">
+    <h3>Research Interests</h3>
+    <ul>
+      <li>Petrology and geochemistry</li>
+      <li>Geochronology</li>
+      <li>Crustal evolution</li>
+    </ul>
+
+    <h3>Current Projects</h3>
+    <p>Dating of glacial diamictites using detrital zircons to study atmospheric oxygen variations.</p>
   </div>
 </div>
 
-<!-- Research Introduction -->
-<div style="max-width: 700px; margin: 0 auto; padding: 20px; line-height: 1.6;">
-  <h2>About My Research</h2>
-  <p>My work focuses on [briefly describe your research focus]. I specialize in [specific techniques/methods].</p>
-  
-  <h2>Current Projects</h2>
-  <ul>
-    <li>Project 1 description</li>
-    <li>Project 2 description</li>
-  </ul>
-</div>
+<style>
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2a7ae2;
+}
+
+.profile-text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.profile-text h2 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  color: #2a7ae2;
+}
+
+.profile-links {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.btn-email, .btn-orcid, .btn-github {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-email {
+  background-color: #d44638;
+}
+
+.btn-orcid {
+  background-color: #a6ce39;
+}
+
+.btn-github {
+  background-color: #333;
+}
+
+.research-section {
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+</style>

@@ -1,37 +1,55 @@
-# Basic Site Settings
+# Site Settings
 locale: "en-US"
-site_theme: "default"
-
 title: "Yang Luo / PhD student in geochemistry"
 title_separator: "-"
 
-# Site URLs
-url: "https://yangluo-geol.github.io"       # Your GitHub Pages URL
-baseurl: ""                    # Subpath of your site, if any
+# Technical Configuration
+url: "https://yangluo-geol.github.io"
+baseurl: ""
+repository: "yangluo-geol/yangluo-geol.github.io"
+markdown: kramdown
 
-repository: "yangluo-geol/yangluo-geol"
+# Plugins (Required for GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-paginate
 
-# Site Author - sidebar info
+# Collections
+collections:
+  teaching:
+    output: true
+    permalink: /teaching/:path/
+    sort_by: date
+    sort_direction: descending
+  publications:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      comments: false
+
+# Author Information
 author:
-  avatar: "profile.jpg"
   name: "Yang Luo"
-  pronouns: "he/him"
+  avatar: "profile.jpg"
   bio: "Ph.D. Candidate in geochemistry"
   location: "Department of Earth Science, UC Santa Barbara"
-  employer: "University of California, Santa Barbara"
-  uri: "https://yangluo-geol.github.io"
   email: "yangluo@ucsb.edu"
+  uri: "https://yangluo-geol.github.io"
+  pronouns: "he/him"
+  employer: "University of California, Santa Barbara"
+  googlescholar: "https://scholar.google.com/citations?user=IOaZk2AAAAAJ"
 
-# Academic websites
-  googlescholar: "https://scholar.google.com/citations?user=IOaZk2AAAAAJ&hl=en&oi=sra"
-  # Add other profiles here if needed:
-  # academia: ""
-  # arxiv: ""
-  # inspire-hep: ""
-  # impactstory: ""
-  # orcid: ""
-
-# Academic branding - research interests and methods
+# Research Information
 research_interests:
   - "petrology"
   - "geochronology"
@@ -41,30 +59,3 @@ methods:
   - "SEM"
   - "EPMA"
   - "LA-ICP-MS"
-
-# Publication categories
-publication_category:
-  manuscripts:
-    title: "Journal Articles"
-  conferences:
-    title: "Conference Papers"
-
-# Comments (example Discourse or Facebook config)
-comments:
-  # discourse:
-  #   server: ""
-  facebook:
-    appid: ""
-    num_posts: 5
-    colorscheme: "light"
-
-staticman:
-  allowedFields: ['name', 'email', 'url', 'message']
-  branch: "gh-pages"
-
-
- # 
-collections:
-  teaching:
-    output: true
-    permalink: /teaching/:path/

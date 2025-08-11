@@ -144,3 +144,6 @@ theme_settings:
 # ========================
 google_analytics: "" # Add your GA tracking ID
 google_site_verification: "" # For search console
+
+include:
+  - _pages

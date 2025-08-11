@@ -13,7 +13,7 @@ Righ now, I am working on the dating of glacial diamictites using detrital zirco
 
 This website showcases my academic work including publications, talks, teaching, and ongoing projects. You can explore my research interests and contributions in geochemistry, learn about my latest work, and find resources related to petrology and geochemistry. 
 
-Feel free to browse around and contact me via email at <span style="color:#d6336c; font-weight:bold; background-color: #fff3cd; padding:2px 4px; border-radius: 4px;">yangluo@ucsb.edu</span> for any questions or collaborations.
+Feel free to browse around and contact me via email at <span style="color:#000; font-weight:bold; background-color: #fff3cd; padding:2px 4px; border-radius: 4px;">yangluo@ucsb.edu</span> for any questions or collaborations.
 
 ---
 
@@ -25,4 +25,3 @@ This site is powered by the [Academic Pages template](https://github.com/academi
   <img src="https://avatars.githubusercontent.com/u/yangluo-geol" alt="yangluo-geol" width="100" style="border-radius: 50%;">
   <p>yangluo-geol on GitHub</p>
 </a>
-

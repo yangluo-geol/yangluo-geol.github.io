@@ -73,7 +73,7 @@ defaults:
 # ========================
 author:
   name: "Yang Luo"
-  avatar: "assets/images/profile.jpg"
+  avatar: "images/profile.jpg"
   bio: "Ph.D. Candidate in Geochemistry"
   location: "Department of Earth Science, UC Santa Barbara"
   email: "yangluo@ucsb.edu"

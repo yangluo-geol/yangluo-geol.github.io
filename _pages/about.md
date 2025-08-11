@@ -2,7 +2,7 @@
 permalink: /
 title: "Yang Luo — Ph.D. Student in Geochemistry"
 author_profile: true
-avatar: "/files/profile.jpg"
+avatar: "/assets/images/profile.jpg"
 redirect_from: 
   - /about/
   - /about.html

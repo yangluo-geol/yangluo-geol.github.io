@@ -29,9 +29,9 @@ author_profile: true
   <div class="research-section">
     <h3><i class="fas fa-microscope"></i> Research Focus</h3>
     <ul>
-      <li>Petrology and mineral chemistry</li>
-      <li>Geochronology and thermochronology</li>
-      <li>Crustal evolution and tectonics</li>
+      <li>Petrology and mineralogy</li>
+      <li>Geochronology</li>
+      <li> Plate tectonics and Crustal evolution</li>
     </ul>
     
     <h3><i class="fas fa-flask"></i> Analytical Methods</h3>

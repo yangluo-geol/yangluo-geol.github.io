@@ -10,7 +10,7 @@ redirect_from:
 
 <!-- Profile Card Section -->
 <div style="display: flex; align-items: center; gap: 24px; margin-bottom: 28px; flex-wrap: wrap;">
-  <img src="/files/images/profile.jpg" alt="Yang Luo" style="width:140px;height:140px;object-fit:cover;border-radius:50%;border: 3px solid #2563eb; box-shadow: 0 4px 18px rgba(0,0,0,0.10);">
+  <img src="/assets/images/profile.jpg" alt="Yang Luo" style="width:140px;height:140px;object-fit:cover;border-radius:50%;border: 3px solid #2563eb; box-shadow: 0 4px 18px rgba(0,0,0,0.10);">
   <div>
     <h1 style="margin-bottom: 0.3em; font-size: 2em; font-weight: 700;">Yang Luo</h1>
     <div style="font-size: 1.1em; color: #2563eb; font-weight: 600; margin-bottom: 0.2em;">Ph.D. Student in Geochemistry</div>

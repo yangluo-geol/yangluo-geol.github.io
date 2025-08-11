@@ -21,5 +21,14 @@ Feel free to browse around and contact me via email at yangluo@ucsb.edu for any 
 
 This site is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) which is designed for academic personal websites. It supports structured content like publications, talks, teaching, portfolio, blog posts, and a dynamically generated CV.
 
+<body>
+  <!-- Other content -->
 
+  <a href="https://github.com/yangluo-geol" target="_blank">
+    <img src="https://avatars.githubusercontent.com/u/yangluo-geol" alt="yangluo-geol" width="100" style="border-radius: 50%;">
+    <p>yangluo-geol on GitHub</p>
+  </a>
+
+  <!-- Other content -->
+</body>
 

@@ -1,32 +1,55 @@
-# Site Settings
+# ========================
+# Site Metadata
+# ========================
+name: "Yang Luo"
+title: "Yang Luo | PhD Student in Geochemistry"
+description: "PhD candidate specializing in petrology and geochemistry at UC Santa Barbara"
 locale: "en-US"
-title: "Yang Luo / PhD student in geochemistry"
+timezone: "America/Los_Angeles"
 title_separator: "-"
 
+# ========================
 # Technical Configuration
+# ========================
 url: "https://yangluo-geol.github.io"
 baseurl: ""
 repository: "yangluo-geol/yangluo-geol.github.io"
 markdown: kramdown
+highlighter: rouge
+future: true
+show_drafts: false
 
-# Plugins (Required for GitHub Pages)
+# ========================
+# Build Settings
+# ========================
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-paginate
+  - jekyll-sitemap
 
-# Collections
+# ========================
+# Collections Configuration
+# ========================
 collections:
   teaching:
     output: true
-    permalink: /teaching/:path/
+    permalink: /teaching/:year-:title/
     sort_by: date
     sort_direction: descending
+    show_collection_links: true
+    
   publications:
     output: true
+    permalink: /publications/:year-:title/
+    
+  talks:
+    output: true
 
-# Defaults
+# ========================
+# Default Values
+# ========================
 defaults:
   - scope:
       path: ""
@@ -36,26 +59,87 @@ defaults:
       author_profile: false
       share: true
       comments: false
+      toc: false
+      
+  - scope:
+      path: "_pages/teaching.html"
+    values:
+      layout: single
+      title: "Teaching Experience"
+      permalink: /teaching/
 
+# ========================
 # Author Information
+# ========================
 author:
   name: "Yang Luo"
-  avatar: "profile.jpg"
-  bio: "Ph.D. Candidate in geochemistry"
+  avatar: "assets/images/profile.jpg"
+  bio: "Ph.D. Candidate in Geochemistry"
   location: "Department of Earth Science, UC Santa Barbara"
   email: "yangluo@ucsb.edu"
   uri: "https://yangluo-geol.github.io"
   pronouns: "he/him"
   employer: "University of California, Santa Barbara"
+  
+  # Academic Profiles
   googlescholar: "https://scholar.google.com/citations?user=IOaZk2AAAAAJ"
+  orcid: "" # Add if available
+  researchgate: "" # Add if available
+  
+  # Social Media
+  twitter: "" # Add if desired
+  github: "yangluo-geol"
+  linkedin: "" # Add if desired
 
-# Research Information
-research_interests:
-  - "petrology"
-  - "geochronology"
-  - "geochemistry"
+# ========================
+# Research Configuration
+# ========================
+research:
+  interests:
+    - "Petrology"
+    - "Geochronology"
+    - "Geochemistry"
+    - "Mineralogy"
+    
+  methods:
+    - "Scanning Electron Microscopy (SEM)"
+    - "Electron Probe Microanalysis (EPMA)"
+    - "Laser Ablation ICP-MS"
+    - "X-ray Diffraction (XRD)"
+    - "Optical Microscopy"
 
-methods:
-  - "SEM"
-  - "EPMA"
-  - "LA-ICP-MS"
+# ========================
+# Publication Settings
+# ========================
+publication_types:
+  - name: "Journal Articles"
+    tag: "journal"
+    icon: "far fa-file-alt"
+    
+  - name: "Conference Papers"
+    tag: "conference" 
+    icon: "fas fa-comments"
+
+# ========================
+# UI/Display Settings
+# ========================
+theme_settings:
+  primary_color: "#2a7ae2"  # UCSB navy blue
+  accent_color: "#ffd200"   # UCSB gold
+  font:
+    text: "Helvetica, Arial, sans-serif"
+    code: "Courier, monospace"
+    
+  navbar:
+    sticky: true
+    logo: "assets/images/logo.png" # Optional
+    
+  footer:
+    show_copyright: true
+    show_powered_by: true
+
+# ========================
+# Analytics & SEO
+# ========================
+google_analytics: "" # Add your GA tracking ID
+google_site_verification: "" # For search console

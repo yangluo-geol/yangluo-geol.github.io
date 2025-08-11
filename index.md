@@ -1,7 +1,7 @@
 ---
 layout: home
-title: "Yang Luo"
-permalink: /
+title: "Yang Luo - Geochemistry PhD Student"
+author_profile: true
 ---
 
 <div class="profile-container">
@@ -15,7 +15,7 @@ permalink: /
   </div>
 
   <div class="profile-links">
-    <a href="mailto:yangluo@ucsb.edu" class="btn-email">
+    <a href="mailto:yangluo@ucsb.edu?subject=Contact%20from%20Website" class="btn-email">
       <i class="fas fa-envelope"></i> Email
     </a>
     <a href="https://orcid.org/0000-0001-8821-9899" class="btn-orcid" target="_blank">
@@ -33,9 +33,6 @@ permalink: /
       <li>Geochronology</li>
       <li>Crustal evolution</li>
     </ul>
-
-    <h3>Current Projects</h3>
-    <p>Dating of glacial diamictites using detrital zircons to study atmospheric oxygen variations.</p>
   </div>
 </div>
 
@@ -87,6 +84,7 @@ permalink: /
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  transition: transform 0.2s ease;
 }
 
 .btn-email {
@@ -99,6 +97,10 @@ permalink: /
 
 .btn-github {
   background-color: #333;
+}
+
+.btn-email:hover, .btn-orcid:hover, .btn-github:hover {
+  transform: translateY(-2px);
 }
 
 .research-section {

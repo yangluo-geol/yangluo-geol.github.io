@@ -35,7 +35,7 @@ plugins:
 collections:
   teaching:
     output: true
-    permalink: /teaching/2024-2025-ucsb-ta.md/
+    permalink: /teaching/:title/
     sort_by: date
     sort_direction: descending
     show_collection_links: true

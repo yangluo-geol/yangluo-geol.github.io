@@ -15,48 +15,14 @@ breadcrumbs: true
     <p>At UC Santa Barbara's Department of Earth Science, I've had the privilege of teaching and mentoring undergraduate students in various geology courses:</p>
   </div>
 
-  <!-- Directly include content from ucsb-ta.md -->
-  {% assign ta_post = site.teaching | where: "title", "Teaching Assistant - Earth Science Department" | first %}
+  {% assign ta = site.teaching | first %}
   
-  {% if ta_post %}
+  {% if ta %}
     <div class="teaching-item">
-      <h2 class="teaching-title">{{ ta_post.title }}</h2>
-      
-      <div class="teaching-meta">
-        <span class="teaching-term">
-          <i class="fas fa-calendar-alt"></i> {{ ta_post.daterange | default: ta_post.date | date: "%B %Y" }}
-        </span>
-        <span class="teaching-venue">
-          <i class="fas fa-university"></i> {{ ta_post.venue }}
-        </span>
-        <span class="teaching-type">
-          <i class="fas fa-chalkboard-teacher"></i> {{ ta_post.type }}
-        </span>
-      </div>
-      
-      <div class="teaching-content">
-        <!-- Course List Section -->
-        <h3>Courses Taught</h3>
-        <ul>
-          {% for course in ta_post.course_list %}
-            <li>
-              <strong>{{ course.term }}:</strong> {{ course.code }} — <em>{{ course.name }}</em>
-              {% if course.skills %}
-                <div class="course-skills">Skills emphasized: {{ course.skills | join: ", " }}</div>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-        
-        <!-- Responsibilities Section -->
-        <h3>Key Responsibilities</h3>
-        {{ ta_post.content | split: "### Key Responsibilities" | last | split: "### Teaching Philosophy" | first }}
-        
-        <!-- Teaching Philosophy Section -->
-        <h3>Teaching Approach</h3>
-        {{ ta_post.content | split: "### Teaching Philosophy" | last }}
-      </div>
+      {{ ta.content }}
     </div>
+  {% else %}
+    <p>No teaching experiences found.</p>
   {% endif %}
 </div>
 
@@ -77,34 +43,21 @@ breadcrumbs: true
     margin-bottom: 50px;
     padding-bottom: 30px;
     border-bottom: 1px solid #eaeaea;
+    line-height: 1.7;
   }
   
-  .teaching-title {
+  .teaching-item h2 {
     color: #2a7ae2;
     margin-bottom: 15px;
   }
   
-  .teaching-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 20px;
-    color: #666;
-    font-size: 0.95em;
-  }
-  
-  .teaching-meta i {
-    margin-right: 5px;
-    color: #ffd200;
-  }
-  
-  .teaching-content {
-    line-height: 1.7;
-  }
-  
-  .teaching-content h3 {
-    margin-top: 25px;
+  .teaching-item h3 {
     color: #2a7ae2;
+    margin-top: 25px;
+  }
+  
+  .teaching-item ul {
+    padding-left: 20px;
   }
   
   .course-skills {

@@ -7,7 +7,7 @@ title_separator: "-"
 
 # Site URLs
 url: "https://yangluo-geol.github.io"       # Your GitHub Pages URL
-baseurl: "/yangluo-geol"                    # Subpath of your site, if any
+baseurl: ""                    # Subpath of your site, if any
 
 repository: "yangluo-geol/yangluo-geol"
 

@@ -1,20 +1,24 @@
 ---
-title: "Teaching experience 1"
+title: "Teaching Assistant Experience"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+type: "Undergraduate courses"
+permalink: /teaching/2024-2025-ucsb-ta
+venue: "University of California, Santa Barbara — Department of Earth Science"
+date: 2024-09-01
+location: "Santa Barbara, CA, USA"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+I served as a Teaching Assistant for the following undergraduate courses at UCSB’s Department of Earth Science:
 
-Heading 1
-======
+- **Fall 2024:** Earth 114 — *Geomaterials*  
+- **Winter 2024:** Earth 103 — *Structural Geology*  
+- **Spring 2025:** Earth 161 — *Earth Resources, Energy, and the Environment*  
+- **Summer 2025:** Earth 20 — *Geological Catastrophes*  
 
-Heading 2
-======
+**Responsibilities included:**  
+- Leading laboratory sessions and discussion sections.  
+- Assisting with field trips and hands-on activities.  
+- Grading assignments, exams, and lab reports.  
+- Providing academic support to students during office hours.  
 
-Heading 3
-======
+---

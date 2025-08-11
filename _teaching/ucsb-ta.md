@@ -23,7 +23,7 @@ course_list:
   - code: "Earth 20"
     name: "Geological Catastrophes"
     term: "Summer 2025"
-    main content: ["Hazard types", "Emergency preparedness"]
+    main content: ["plate tectonics, natural hazards, disasters, catastrophes: like earthquake, tsunami, volcanoes and flooding"]
 ---
 
 ## Teaching Assistant Experience
@@ -37,9 +37,9 @@ course_list:
 {% endfor %}
 
 ### Key Responsibilities
-- Designed and led weekly laboratory sessions for undergraduate students
+- Led weekly laboratory sessions for undergraduate students
 - Developed instructional materials
-- Conducted office hours and provided individualized academic support
+- Conducted office hours
 - Graded and provided feedback on:
   - Laboratory reports/assignments
 - Assisted faculty with course development and curriculum improvements
@@ -47,7 +47,6 @@ course_list:
 ### Teaching Philosophy
 My approach emphasizes:
 - Hands-on, experiential learning in laboratory and field settings
-- Integrating current research into undergraduate curriculum
 - Fostering inclusive learning environments
 
 <style>

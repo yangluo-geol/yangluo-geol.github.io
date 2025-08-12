@@ -1,38 +1,20 @@
 ---
-title: "Zircon Image Diagnostic Test"
+title: "Detrital Zircon Analysis of Glacial Diamictites"
 layout: single
 permalink: /projects/
 ---
 
-<div style="border: 3px solid red; padding: 20px; background: #fff9f9; margin: 30px 0;">
+## Research Overview
 
-## 🔬 IMAGE LOADING TEST
+This project investigates Paleoproterozoic glacial diamictites from South Africa (∼2.4 Ga) through detrital zircon U-Pb geochronology. The study focuses on three key objectives:
 
-### Testing Method
-We'll attempt to load your images through 5 different methods. At least one MUST work if your files exist.
+1. **Age Determination**  
+   Constraining depositional timing of Neoproterozoic glacial events using zircon age spectra.
 
-```html
-<!-- Method 1: Direct GitHub Pages URL -->
-<img src="/images/projects/EBA1-CL-007.png" 
-     style="width:300px; border:2px solid blue; margin:10px;"
-     onerror="console.error('Method 1 failed')">
+2. **Provenance Analysis**  
+   Tracing sediment sources through U-Pb isotopic signatures and cathodoluminescence textures.
 
-<!-- Method 2: Raw GitHub URL -->
-<img src="https://raw.githubusercontent.com/yangluo-geol/yangluo-geol.github.io/master/images/projects/EBA1-CL-007.png"
-     style="width:300px; border:2px solid green; margin:10px;"
-     onerror="console.error('Method 2 failed')">
+3. **Paleoenvironmental Context**  
+   Correlating detrital zircon records with atmospheric oxygen fluctuations during the Great Oxidation Event.
 
-<!-- Method 3: GitHub Pages absolute URL -->
-<img src="https://yangluo-geol.github.io/images/projects/EBA1-CL-007.png"
-     style="width:300px; border:2px solid orange; margin:10px;"
-     onerror="console.error('Method 3 failed')">
-
-<!-- Method 4: Base64 encoded test image (control) -->
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/C/HgAGgwJ/lK3Q6wAAAABJRU5ErkJggg=="
-     style="width:300px; border:2px solid purple; margin:10px;"
-     onerror="console.error('Method 4 failed (this is BAD)')">
-
-<!-- Method 5: Iframe fallback -->
-<iframe src="https://yangluo-geol.github.io/images/projects/EBA1-CL-007.png"
-        style="width:300px; height:300px; border:2px dashed red; margin:10px;">
-</iframe>
+The analyzed samples (EBA1, DP22, DUIT3) represent distinct stratigraphic units from the Transvaal Supergroup, selected for their preservation of glacial signatures and zircon abundance.

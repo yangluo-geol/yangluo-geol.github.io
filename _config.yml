@@ -46,11 +46,6 @@ collections:
     
   talks:
     output: false
-    
-  projects:
-    output: true
-    permalink: /projects/:path/
-
 
 # ========================
 # Default Values
@@ -72,12 +67,6 @@ defaults:
       layout: single
       title: "Teaching Experience"
       permalink: /teaching/
-
-  - scope:
-      path: ""
-      type: projects
-    values:
-      layout: project
     
 # ========================
 # Author Information

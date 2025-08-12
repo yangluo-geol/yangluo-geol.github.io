@@ -4,7 +4,7 @@ title: "Portfolio"
 permalink: /portfolio/
 ---
 
-<h1>Photography Portfolio</h1>
+<h1>CL images of zircons</h1>
 
 <div class="photo-grid">
   <a href="/assets/images/DP22-CL-015.png" data-lightbox="portfolio" data-title="Description 1">

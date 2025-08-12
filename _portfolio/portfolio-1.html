@@ -1,0 +1,108 @@
+---
+layout: default
+title: Photo Gallery
+image: /assets/images/glacial-diamictites.png  <!-- Add a representative thumbnail -->
+description: Field photos and sample photos
+---
+
+<div class="portfolio-gallery">
+  <h2 class="gallery-title">Geological Documentation</h2>
+  
+  <div class="gallery-grid">
+    <!-- Field Sample 1 -->
+    <figure class="gallery-item">
+      <img src="/assets/images/diamictite-field.jpg" 
+           alt="Diamictite outcrop in Transvaal Basin"
+           loading="lazy">
+      <figcaption>
+        <h3>DP22 Field Sample</h3>
+        <p>Duitschland Formation diamictite showing characteristic clast composition (hammer for scale)</p>
+        <div class="sample-meta">
+          <span>Location: Transvaal Basin</span>
+          <span>Coordinates: 25°18'S 29°24'E</span>
+        </div>
+      </figcaption>
+    </figure>
+
+    <!-- Microscopic Sample -->
+    <figure class="gallery-item">
+      <img src="/assets/images/thin-section-xpl.jpg" 
+           alt="Zircon crystals in thin section"
+           loading="lazy">
+      <figcaption>
+        <h3>Thin Section Analysis</h3>
+        <p>Zircon crystals in chlorite matrix (XPL, 40x magnification)</p>
+        <div class="sample-meta">
+          <span>Sample: DUIT3</span>
+          <span>Scale: 200μm</span>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<style>
+.portfolio-gallery {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.gallery-item {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+figcaption {
+  padding: 1.2rem;
+}
+
+figcaption h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.sample-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

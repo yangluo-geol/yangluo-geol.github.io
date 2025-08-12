@@ -24,7 +24,7 @@ author_profile: true
     </div>
     
     <a href="https://scholar.google.com/citations?user=IOaZk2AAAAAJ" class="btn-scholar" target="_blank" rel="noopener noreferrer">
-      <i class="ai ai-google-scholar"></i> Scholar
+      <i class="ai ai-google-scholar"></i> Google Scholar
     </a>
     <a href="https://github.com/yangluo-geol" class="btn-github" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-github"></i> GitHub

@@ -16,13 +16,13 @@ main:
 
   - title: "Teaching"
     url: /teaching/    
-
-  - title: "Portfolio"
-    url: /portfolio/
     
   - title: "Project"       # <-- New entry added here
     url: /project/
 
+  - title: "Portfolio"
+    url: /portfolio/
+    
   - title: "Talks"
     url: /talks/
  

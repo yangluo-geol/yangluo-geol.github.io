@@ -4,6 +4,24 @@ layout: single
 permalink: /projects/
 ---
 
+<style>
+.zircon-pair {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+.zircon-img {
+  width: 48%;
+  border: 1px solid #eee;
+  padding: 5px;
+  background: white;
+}
+@media (max-width: 768px) {
+  .zircon-img { width: 100%; }
+}
+</style>
+
 ## Sample EBA1
 <div class="zircon-grid">
   <img src="/images/projects/EBA1-CL-007.png" class="zircon-img">

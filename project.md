@@ -4,7 +4,7 @@ title: My Project
 permalink: /project/
 ---
 
-# Project Title
+# Determine the maximum depositional age of diamictites using U-Pb dating of detrital zircon. 
 
 Description of your project with:
 - Objectives

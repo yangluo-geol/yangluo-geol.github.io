@@ -16,8 +16,8 @@ permalink: /portfolio/
   <a href="/assets/images/DUIT3-CL-005.png" target="_blank">
     <img src="/assets/images/DUIT3-CL-005.png" alt="Description 3">
   </a>
-  <a href="/assets/images/DP22-CL-008.png" target="_blank">
-    <img src="/assets/images/DP22-CL-008.png" alt="Description 4">
+  <a href="/assets/images/DUIT3-CL-008.png" target="_blank">
+    <img src="/assets/images/DUIT3-CL-008.png" alt="Description 4">
   </a>
 </div>
 

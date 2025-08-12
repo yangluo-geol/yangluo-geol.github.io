@@ -2,7 +2,6 @@
 title: "Fluid-Induced Inhomogeneous Cr-spinel in Dunite and Wehrlite from the Duke Island Complex, Southeastern Alaska"
 collection: publications
 category: manuscripts
-permalink: /publication/2022-06-03-fluid-induced-inhomogeneous-cr-spinel
 excerpt: >
   Cr-spinel with unmixed textures in dunite and wehrlite from the Duke Island Complex
   shows complex inhomogeneous compositions formed by fluid interaction and unmixing processes.

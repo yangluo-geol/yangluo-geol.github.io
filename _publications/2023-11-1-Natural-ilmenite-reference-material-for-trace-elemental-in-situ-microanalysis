@@ -1,5 +1,4 @@
 ---
-layout: publication
 title: "Natural ilmenite reference material for trace elemental in situ microanalysis"
 collection: publications
 category: manuscripts
@@ -11,10 +10,11 @@ citation: >
   Yang Luo, Jing Wang, Yan Xiao, Wen-Jun Li, Shi-Ying Wang, Zi-Yi Ding, Yan-Hong Liu, Hong-Yu Zhang, Ben-Xun Su. (2023).
   Natural ilmenite reference material for trace elemental in situ microanalysis.
   <i>Spectrochimica Acta Part B: Atomic Spectroscopy</i>, 209, 106798.
+no_link: true  # Add this custom flag
 ---
 
-<div class="non-clickable-title">
-  <h1>Natural ilmenite reference material for trace elemental in situ microanalysis</h1>
+<div class="non-clickable">
+  <h2>Natural ilmenite reference material for trace elemental in situ microanalysis</h2>
 </div>
 
 **Reference:**  
@@ -27,13 +27,3 @@ Natural ilmenite reference material for trace elemental in situ microanalysis.
 Ilmenite is a common mineral in igneous and metamorphic rocks used as a geothermometer, oxygen barometer, and geochemical tracer. This study developed a 500 g ilmenite megacryst (sample LY) as a reference material for in situ elemental microanalysis. Twenty-two ilmenite fragments (1-8 mm grain size) were analyzed using EMPA and LA-ICP-MS across four laboratories.
 
 The sample shows homogeneity for TiO₂, FeO, Mg, Sc, V, Cr, and Mn, with minor inhomogeneity observed in Co and Nb. These results indicate the sample's suitability as a reliable reference material for major and trace element in situ microanalysis.
-
-<style>
-.non-clickable-title h1 {
-  pointer-events: none;
-  cursor: default;
-  color: inherit;
-  font-size: 1.8em;
-  margin-bottom: 0.5em;
-}
-</style>

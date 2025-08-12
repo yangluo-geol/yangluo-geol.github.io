@@ -1,84 +1,41 @@
 ---
 title: "Zircon Cathodoluminescence Imaging"
 layout: single
-permalink: /projects/    # This makes it the main projects page
+permalink: /projects/
 ---
 
-<style>
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 25px;
-    margin: 40px 0;
-  }
-  .zircon-card {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  }
-  .zircon-img {
-    width: 100%;
-    border: 1px solid #eaeaea;
-    border-radius: 4px;
-  }
-</style>
-
-## Zircon CL Image Gallery
-
-### Sample EBA1
-<div class="image-grid">
-  <div class="zircon-card">
-    <img src="/assets/images/projects/EBA1-CL-007.png" 
-         class="zircon-img"
-         alt="EBA1 Zircon CL 007"
-         onerror="this.src='https://placehold.co/600x400?text=EBA1-007+Not+Found'">
-    <p style="text-align:center; margin-top:10px;">EBA1-CL-007</p>
-  </div>
-  
-  <div class="zircon-card">
-    <img src="/assets/images/projects/EBA1-CL-015.png" 
-         class="zircon-img"
-         alt="EBA1 Zircon CL 015"
-         onerror="this.src='https://placehold.co/600x400?text=EBA1-015+Not+Found'">
-    <p style="text-align:center; margin-top:10px;">EBA1-CL-015</p>
-  </div>
+<div style="border: 3px solid #e74c3c; padding: 20px; background: #f9f9f9; margin-bottom: 30px;">
+  <h2>Image Loading Test</h2>
+  <p>Testing all image display methods simultaneously. At least one <strong>must</strong> work if files exist.</p>
 </div>
 
-### Sample DP22
-<div class="image-grid">
-  <div class="zircon-card">
-    <img src="/assets/images/projects/DP22-CL-015.png" 
-         class="zircon-img"
-         alt="DP22 Zircon CL 015"
-         onerror="this.src='https://placehold.co/600x400?text=DP22-015+Not+Found'">
-    <p style="text-align:center; margin-top:10px;">DP22-CL-015</p>
-  </div>
-  
-  <div class="zircon-card">
-    <img src="/assets/images/projects/DP22-CL-025.png" 
-         class="zircon-img"
-         alt="DP22 Zircon CL 025"
-         onerror="this.src='https://placehold.co/600x400?text=DP22-025+Not+Found'">
-    <p style="text-align:center; margin-top:10px;">DP22-CL-025</p>
-  </div>
-</div>
+## Sample EBA1
 
-### Sample DUIT3
-<div class="image-grid">
-  <div class="zircon-card">
-    <img src="/assets/images/projects/DUIT3-CL-005.png" 
-         class="zircon-img"
-         alt="DUIT3 Zircon CL 005"
-         onerror="this.src='https://placehold.co/600x400?text=DUIT3-005+Not+Found'">
-    <p style="text-align:center; margin-top:10px;">DUIT3-CL-005</p>
-  </div>
-  
-  <div class="zircon-card">
-    <img src="/assets/images/projects/DUIT3-CL-008.png" 
-         class="zircon-img"
-         alt="DUIT3 Zircon CL 008"
-         onerror="this.src='https://placehold.co/600x400?text=DUIT3-008+Not+Found'">
-    <p style="text-align:center; margin-top:10px;">DUIT3-CL-008</p>
-  </div>
+### Method 1: GitHub Pages Direct
+<img src="https://yangluo-geol.github.io/assets/images/projects/EBA1-CL-007.png" 
+     style="max-width: 500px; border: 3px solid blue; margin: 20px 0;"
+     onerror="this.parentElement.innerHTML += '<div style=color:red>❌ Method 1 failed</div>'">
+
+### Method 2: Raw GitHub URL
+<img src="https://raw.githubusercontent.com/yangluo-geol/yangluo-geol.github.io/master/assets/images/projects/EBA1-CL-007.png"
+     style="max-width: 500px; border: 3px solid green; margin: 20px 0;"
+     onerror="this.parentElement.innerHTML += '<div style=color:red>❌ Method 2 failed</div>'">
+
+### Method 3: Base64 Fallback
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/C/HgAGgwJ/lK3Q6wAAAABJRU5ErkJggg=="
+     style="max-width: 500px; border: 3px solid purple; margin: 20px 0;"
+     onerror="this.parentElement.innerHTML += '<div style=color:red>❌ Method 3 failed (THIS IS BAD)'">
+
+<div style="background: #f0f8ff; padding: 15px; margin: 30px 0; border-left: 5px solid #4682b4;">
+  <h3>Verification Steps</h3>
+  <ol>
+    <li>Right-click each image → "Open image in new tab"</li>
+    <li>Test these direct URLs:
+      <ul>
+        <li><a href="https://yangluo-geol.github.io/assets/images/projects/EBA1-CL-007.png" target="_blank">GitHub Pages URL</a></li>
+        <li><a href="https://raw.githubusercontent.com/yangluo-geol/yangluo-geol.github.io/master/assets/images/projects/EBA1-CL-007.png" target="_blank">Raw GitHub URL</a></li>
+      </ul>
+    </li>
+    <li>Check console for errors (F12 → Console)</li>
+  </ol>
 </div>

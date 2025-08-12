@@ -1,24 +1,23 @@
 ---
-title: "Zircon Cathodoluminescence Imaging"
+title: "Zircon CL Images"
 layout: single
 permalink: /projects/
 ---
 
-## Zircon CL Characterization
+## Sample EBA1
+<div class="zircon-grid">
+  <img src="/images/projects/EBA1-CL-007.png" class="zircon-img">
+  <img src="/images/projects/EBA1-CL-015.png" class="zircon-img">
+</div>
 
-### Sample EBA1
-![EBA1 CL Image](/images/projects/EBA1-CL-007.png){: .cl-image width="80%"}
-*Fig. 1:* Oscillatory zoning in zircon EBA1 (15 kV, WD 10mm). Scale bar = 50 μm.
+## Sample DP22
+<div class="zircon-grid">
+  <img src="/images/projects/DP22-CL-015.png" class="zircon-img">
+  <img src="/images/projects/DP22-CL-025.png" class="zircon-img">
+</div>
 
----
-
-### Sample DP22
-| [![DP22 CL](/images/projects/DP22-CL-015.png){: .cl-thumb}](/images/projects/DP22-CL-full.png) | [![DP22 BSE](/images/projects/DP22-BSE-thumb.png){: .cl-thumb}](/images/projects/DP22-BSE-full.png) |
-|:--:|:--:|
-| *Fig. 2A:* CL image | *Fig. 2B:* BSE counterpart |
-
----
-
-### Sample DUIT3
-![DUIT3 Core-Rim](/images/projects/DUIT3-composite.png){: .border width="90%"}
-*Fig. 3:* Core-to-rim zoning in zircon DUIT3.
+## Sample DUIT3
+<div class="zircon-grid">
+  <img src="/images/projects/DUIT3-CL-005.png" class="zircon-img">
+  <img src="/images/projects/DUIT3-CL-008.png" class="zircon-img">
+</div>

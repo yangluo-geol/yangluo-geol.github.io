@@ -17,7 +17,7 @@ permalink: /portfolio/
     <img src="/assets/images/DUIT3-CL-005.png" alt="Description 3">
   </a>
   <a href="/assets/images/DUIT3-CL-008.png" data-lightbox="portfolio" data-title="Description 4">
-    <img src="/assets/images/DP22-CL-008.png" alt="Description 4">
+    <img src="/assets/images/DUIT3-CL-008.png" alt="Description 4">
   </a>
 </div>
 

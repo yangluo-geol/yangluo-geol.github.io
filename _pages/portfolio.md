@@ -19,11 +19,11 @@ permalink: /portfolio/
   <a href="/assets/images/DUIT3-CL-008.png" data-lightbox="zircons" data-title="Description 4">
     <img src="/assets/images/DUIT3-CL-008.png" alt="Description 4">
   </a>
-  <a href="/assets/images/EBA1-CL-005.png" data-lightbox="zircons" data-title="Description 3">
-    <img src="/assets/images/EBA1-CL-005.png" alt="Description 3">
+  <a href="/assets/images/EBA1-CL-007.png" data-lightbox="zircons" data-title="Description 3">
+    <img src="/assets/images/EBA1-CL-007.png" alt="Description 3">
   </a>
-  <a href="/assets/images/EBA1-CL-008.png" data-lightbox="zircons" data-title="Description 4">
-    <img src="/assets/images/EBA1-CL-008.png" alt="Description 4">
+  <a href="/assets/images/EBA1-CL-015.png" data-lightbox="zircons" data-title="Description 4">
+    <img src="/assets/images/EBA1-CL-015.png" alt="Description 4">
   </a>
 </div>
 

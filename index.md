@@ -9,7 +9,7 @@ author_profile: true
     <img src="/assets/images/profile.jpg" alt="Yang Luo" class="profile-image">
     <div class="profile-text">
       <h1>Yang Luo</h1>
-      <h2>Ph.D. Candidate in Geochemistry</h2>
+      <h2>PhD Student in Geochemistry</h2>
       <p>Department of Earth Science<br>University of California, Santa Barbara</p>
     </div>
   </div>

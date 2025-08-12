@@ -7,10 +7,18 @@ permalink: /portfolio/
 <h1>Photography Portfolio</h1>
 
 <div class="photo-grid">
-  <img src="/assets/images/DP22-CL-015.png" alt="Description 1">
-  <img src="/assets/images/DP22-CL-025.png" alt="Description 2">
-  <img src="/assets/images/DUIT3-CL-005.png" alt="Description 3">
-  <img src="/assets/images/DP22-CL-008.png" alt="Description 4">
+  <a href="/assets/images/DP22-CL-015.png" target="_blank">
+    <img src="/assets/images/DP22-CL-015.png" alt="Description 1">
+  </a>
+  <a href="/assets/images/DP22-CL-025.png" target="_blank">
+    <img src="/assets/images/DP22-CL-025.png" alt="Description 2">
+  </a>
+  <a href="/assets/images/DUIT3-CL-005.png" target="_blank">
+    <img src="/assets/images/DUIT3-CL-005.png" alt="Description 3">
+  </a>
+  <a href="/assets/images/DP22-CL-008.png" target="_blank">
+    <img src="/assets/images/DP22-CL-008.png" alt="Description 4">
+  </a>
 </div>
 
 <style>

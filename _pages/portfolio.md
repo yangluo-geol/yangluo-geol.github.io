@@ -7,10 +7,10 @@ permalink: /portfolio/
 <h1>Photography Portfolio</h1>
 
 <div class="photo-grid">
-  <img src="/assets/images/portfolio/photo1.jpg" alt="Description 1">
-  <img src="/assets/images/portfolio/photo2.jpg" alt="Description 2">
-  <img src="/assets/images/portfolio/photo3.jpg" alt="Description 3">
-  <img src="/assets/images/portfolio/photo4.jpg" alt="Description 4">
+  <img src="/assets/images/DP22-CL-015.png" alt="Description 1">
+  <img src="/assets/images/DP22-CL-025.png" alt="Description 2">
+  <img src="/assets/images/DUIT3-CL-005.png" alt="Description 3">
+  <img src="/assets/images/DP22-CL-008.png" alt="Description 4">
 </div>
 
 <style>

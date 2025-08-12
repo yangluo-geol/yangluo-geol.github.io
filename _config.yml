@@ -75,7 +75,7 @@ author:
   name: "Yang Luo"
   bio: "Ph.D. Candidate in Geochemistry"
   location: "Department of Earth Science, UC Santa Barbara"
-  email: "yangluo@ucsb.edu"
+  # email: "yangluo@ucsb.edu"
   uri: "https://yangluo-geol.github.io"
   pronouns: "he/him"
   employer: "University of California, Santa Barbara"
@@ -84,7 +84,7 @@ author:
   googlescholar: "https://scholar.google.com/citations?user=IOaZk2AAAAAJ"
   
   # Social Media
-  github: "yangluo-geol"
+  # github: "yangluo-geol"
 
 # ========================
 # Research Configuration

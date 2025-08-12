@@ -3,7 +3,7 @@
 # ========================
 name: "Yang Luo"
 title: "Yang Luo | PhD Student in Geochemistry"
-description: "PhD candidate specializing in petrology and geochemistry at UC Santa Barbara"
+description: "PhD student specializing in petrology and geochemistry at UC Santa Barbara"
 locale: "en-US"
 timezone: "America/Los_Angeles"
 title_separator: "-"
@@ -73,7 +73,7 @@ defaults:
 # ========================
 author:
   name: "Yang Luo"
-  bio: "Ph.D. Candidate in Geochemistry"
+  bio: "PhD student in Geochemistry"
   location: "Department of Earth Science, UC Santa Barbara"
   # email: "yangluo@ucsb.edu"
   uri: "https://yangluo-geol.github.io"

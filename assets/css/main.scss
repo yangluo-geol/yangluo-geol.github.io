@@ -40,3 +40,16 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+// Disable click on titles with no_link flag
+[no_link="true"] .publication-title a {
+  pointer-events: none;
+  cursor: default;
+  color: inherit;
+  text-decoration: none;
+}
+
+.non-clickable h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+  color: inherit;
+}

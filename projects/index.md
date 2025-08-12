@@ -1,7 +1,7 @@
 ---
 title: "Zircon Cathodoluminescence Imaging"
 layout: single
-permalink: /projects/zircon-cl/
+permalink: /projects/    # This makes it the main projects page
 ---
 
 <style>

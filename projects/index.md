@@ -1,12 +1,12 @@
 ---
-title: "Zircon Cathodoluminescence Imaging"
+title: "Zircon CL Images"
 layout: single
 permalink: /projects/
 ---
 
 <script>
-// Debugging tool - will show in browser console (F12)
-function verifyImages() {
+// LIVE IMAGE VERIFIER
+document.addEventListener('DOMContentLoaded', function() {
   const images = [
     '/images/projects/EBA1-CL-007.png',
     '/images/projects/EBA1-CL-015.png',
@@ -15,88 +15,89 @@ function verifyImages() {
     '/images/projects/DUIT3-CL-005.png',
     '/images/projects/DUIT3-CL-008.png'
   ];
-  
-  console.log('=== Image Verification ===');
-  images.forEach(img => {
-    const testImg = new Image();
-    testImg.onload = () => console.log(`✓ ${img} exists`);
-    testImg.onerror = () => console.log(`✗ ${img} MISSING`);
-    testImg.src = img;
+
+  // 1. Verify images exist
+  console.log('=== IMAGE VERIFICATION ===');
+  images.forEach(url => {
+    const img = new Image();
+    img.onload = () => console.log(`✓ ${url} EXISTS`);
+    img.onerror = () => console.log(`❌ ${url} MISSING (404)`);
+    img.src = url;
   });
-}
-document.addEventListener('DOMContentLoaded', verifyImages);
+
+  // 2. Force display with cache busting
+  document.querySelectorAll('img').forEach(img => {
+    img.src = img.dataset.rawSrc + '?t=' + Date.now();
+  });
+});
 </script>
 
 <style>
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px;
-  margin: 30px 0;
+/* Irresistible styling */
+.zircon-container {
+  border: 3px solid #e74c3c !important;
+  padding: 20px !important;
+  background: #f9f9f9 !important;
 }
 .zircon-img {
-  width: 100%;
-  border: 1px solid #eaeaea;
-  padding: 5px;
-  background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 100% !important;
+  height: auto !important;
+  border: 2px solid #3498db !important;
+  margin: 10px 0 !important;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1) !important;
 }
-.debug-info {
-  background: #f8f9fa;
-  padding: 15px;
-  border-radius: 4px;
-  margin: 20px 0;
-  font-family: monospace;
+.debug {
+  background: #ffecb3 !important;
+  padding: 15px !important;
+  font-family: monospace !important;
 }
 </style>
 
-## Zircon CL Image Gallery
-
-### Sample EBA1
-<div class="image-grid">
-  <img src="/images/projects/EBA1-CL-007.png" 
-       class="zircon-img" 
-       alt="EBA1 Zircon CL 007"
-       onerror="this.src='/assets/images/image-error.png'">
+<div class="zircon-container">
+  <h2>ZIRCON IMAGE FORCE-DISPLAY</h2>
   
-  <img src="/images/projects/EBA1-CL-015.png" 
+  <!-- EBA1 -->
+  <h3>EBA1 Samples</h3>
+  <img data-raw-src="/images/projects/EBA1-CL-007.png" 
        class="zircon-img" 
-       alt="EBA1 Zircon CL 015"
-       onerror="this.src='/assets/images/image-error.png'">
-</div>
+       alt="EBA1-007" 
+       onerror="this.style.display='none'">
+  <img data-raw-src="/images/projects/EBA1-CL-015.png" 
+       class="zircon-img" 
+       alt="EBA1-015" 
+       onerror="this.style.display='none'">
 
-### Sample DP22
-<div class="image-grid">
-  <img src="/images/projects/DP22-CL-015.png" 
+  <!-- DP22 -->
+  <h3>DP22 Samples</h3>
+  <img data-raw-src="/images/projects/DP22-CL-015.png" 
        class="zircon-img" 
-       alt="DP22 Zircon CL 015"
-       onerror="this.src='/assets/images/image-error.png'">
-  
-  <img src="/images/projects/DP22-CL-025.png" 
+       alt="DP22-015" 
+       onerror="this.style.display='none'">
+  <img data-raw-src="/images/projects/DP22-CL-025.png" 
        class="zircon-img" 
-       alt="DP22 Zircon CL 025"
-       onerror="this.src='/assets/images/image-error.png'">
-</div>
+       alt="DP22-025" 
+       onerror="this.style.display='none'">
 
-### Sample DUIT3
-<div class="image-grid">
-  <img src="/images/projects/DUIT3-CL-005.png" 
+  <!-- DUIT3 -->
+  <h3>DUIT3 Samples</h3>
+  <img data-raw-src="/images/projects/DUIT3-CL-005.png" 
        class="zircon-img" 
-       alt="DUIT3 Zircon CL 005"
-       onerror="this.src='/assets/images/image-error.png'">
-  
-  <img src="/images/projects/DUIT3-CL-008.png" 
+       alt="DUIT3-005" 
+       onerror="this.style.display='none'">
+  <img data-raw-src="/images/projects/DUIT3-CL-008.png" 
        class="zircon-img" 
-       alt="DUIT3 Zircon CL 008"
-       onerror="this.src='/assets/images/image-error.png'">
-</div>
+       alt="DUIT3-008" 
+       onerror="this.style.display='none'">
 
-<div class="debug-info">
-  <strong>Troubleshooting:</strong>
-  <ol>
-    <li>Press <kbd>F12</kbd> → Console to see image verification results</li>
-    <li>Check exact filenames match (case-sensitive)</li>
-    <li>Images must be in <code>/images/projects/</code> folder</li>
-    <li>Wait 2 minutes after uploading new images</li>
-  </ol>
+  <div class="debug">
+    <strong>TROUBLESHOOTING:</strong>
+    <ol>
+      <li>Press F12 → Console to see which images fail</li>
+      <li>Verify files exist at:
+        <code>https://yangluo-geol.github.io/images/projects/FILENAME.png</code>
+      </li>
+      <li>Check filenames are EXACT (case-sensitive)</li>
+      <li>Disable ad-blockers/extensions</li>
+    </ol>
+  </div>
 </div>

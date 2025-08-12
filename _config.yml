@@ -49,6 +49,7 @@ collections:
     
   projects:
     output: true
+    permalink: /projects/:path/
 
 
 # ========================
@@ -72,6 +73,12 @@ defaults:
       title: "Teaching Experience"
       permalink: /teaching/
 
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+    
 # ========================
 # Author Information
 # ========================

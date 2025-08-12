@@ -1,83 +1,105 @@
 ---
-title: "Zircon CL Images - Diagnostic Test"
+title: "Zircon Cathodoluminescence Imaging"
 layout: single
 permalink: /projects/
 ---
 
-<div style="border: 3px solid #e74c3c; padding: 20px; background: #f9f9f9; margin: 30px 0;">
+<style>
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+  }
+  .zircon-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+  .zircon-img {
+    width: 100%;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+  }
+</style>
 
-## 🔍 IMAGE LOADING TEST
+## Complete Zircon CL Gallery
 
-<script>
-// Nuclear verification method
-document.addEventListener('DOMContentLoaded', function() {
-  const images = [
-    '/images/projects/EBA1-CL-007.png',
-    '/images/projects/EBA1-CL-015.png',
-    '/images/projects/DP22-CL-015.png',
-    '/images/projects/DP22-CL-025.png',
-    '/images/projects/DUIT3-CL-005.png',
-    '/images/projects/DUIT3-CL-008.png'
-  ];
+### Sample EBA1
+<div class="image-grid">
+  <div class="zircon-card">
+    <img src="https://raw.githubusercontent.com/yangluo-geol/yangluo-geol.github.io/master/images/projects/EBA1-CL-007.png" 
+         class="zircon-img"
+         alt="EBA1 Zircon CL 007"
+         onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=EBA1-007+Not+Found'">
+    <p style="text-align:center; margin-top:10px;">EBA1-CL-007</p>
+  </div>
+  
+  <div class="zircon-card">
+    <img src="https://raw.githubusercontent.com/yangluo-geol/yangluo-geol.github.io/master/images/projects/EBA1-CL-015.png" 
+         class="zircon-img"
+         alt="EBA1 Zircon CL 015"
+         onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=EBA1-015+Not+Found'">
+    <p style="text-align:center; margin-top:10px;">EBA1-CL-015</p>
+  </div>
+</div>
 
-  // 1. Console verification
-  console.log('=== IMAGE VERIFICATION ===');
-  images.forEach(url => {
-    const img = new Image();
-    img.onload = () => console.log(`✓ ${url} LOADED`);
-    img.onerror = () => console.log(`❌ ${url} FAILED (404)`);
-    img.src = url + '?t=' + Date.now(); // Cache busting
-  });
+### Sample DP22
+<div class="image-grid">
+  <div class="zircon-card">
+    <img src="https://raw.githubusercontent.com/yangluo-geol/yangluo-geol.github.io/master/images/projects/DP22-CL-015.png" 
+         class="zircon-img"
+         alt="DP22 Zircon CL 015"
+         onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=DP22-015+Not+Found'">
+    <p style="text-align:center; margin-top:10px;">DP22-CL-015</p>
+  </div>
+  
+  <div class="zircon-card">
+    <img src="https://raw.githubusercontent.com/yangluo-geol/yangluo-geol.github.io/master/images/projects/DP22-CL-025.png" 
+         class="zircon-img"
+         alt="DP22 Zircon CL 025"
+         onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=DP22-025+Not+Found'">
+    <p style="text-align:center; margin-top:10px;">DP22-CL-025</p>
+  </div>
+</div>
 
-  // 2. Force display with multiple fallbacks
-  const container = document.getElementById('image-test');
-  images.forEach(url => {
-    // Method 1: Direct img tag
-    container.innerHTML += `
-    <div style="margin: 20px 0; padding: 10px; background: white;">
-      <h3>Testing: ${url.split('/').pop()}</h3>
-      <strong>Method 1:</strong> Direct image tag<br>
-      <img src="${url}" style="max-width: 300px; border: 2px solid blue; margin: 10px 0;" 
-           onerror="this.parentNode.innerHTML += '<span style=color:red>❌ FAILED</span>'">
-      
-      <div style="margin-top: 10px;">
-        <strong>Method 2:</strong> GitHub Raw URL<br>
-        <img src="https://raw.githubusercontent.com/yangluo-geol/yangluo-geol.github.io/main${url}" 
-             style="max-width: 300px; border: 2px solid green; margin: 10px 0;"
-             onerror="this.parentNode.innerHTML += '<span style=color:red>❌ FAILED</span>'">
-      </div>
-      
-      <div style="margin-top: 10px;">
-        <strong>Test Links:</strong>
-        <a href="${url}" target="_blank">GitHub Pages</a> | 
-        <a href="https://raw.githubusercontent.com/yangluo-geol/yangluo-geol.github.io/main${url}" target="_blank">Raw GitHub</a>
-      </div>
-    </div>
-    `;
-  });
-});
-</script>
+### Sample DUIT3
+<div class="image-grid">
+  <div class="zircon-card">
+    <img src="https://raw.githubusercontent.com/yangluo-geol/yangluo-geol.github.io/master/images/projects/DUIT3-CL-005.png" 
+         class="zircon-img"
+         alt="DUIT3 Zircon CL 005"
+         onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=DUIT3-005+Not+Found'">
+    <p style="text-align:center; margin-top:10px;">DUIT3-CL-005</p>
+  </div>
+  
+  <div class="zircon-card">
+    <img src="https://raw.githubusercontent.com/yangluo-geol/yangluo-geol.github.io/master/images/projects/DUIT3-CL-008.png" 
+         class="zircon-img"
+         alt="DUIT3 Zircon CL 008"
+         onerror="this.onerror=null;this.src='https://placehold.co/600x400?text=DUIT3-008+Not+Found'">
+    <p style="text-align:center; margin-top:10px;">DUIT3-CL-008</p>
+  </div>
+</div>
 
-<div id="image-test"></div>
-
-<div style="background: #ffecb3; padding: 15px; margin-top: 30px;">
-  <h3>🚨 TROUBLESHOOTING GUIDE</h3>
+<div style="background:#f5f5f5; padding:20px; border-radius:8px; margin-top:40px;">
+  <h3>🛠️ Troubleshooting Guide</h3>
   <ol>
-    <li><strong>Press F12 → Console</strong> to see verification results</li>
-    <li><strong>Click the test links</strong> under each image</li>
-    <li>If both methods show ❌:
+    <li><strong>Verify images exist at:</strong><br>
+      <code>https://github.com/yangluo-geol/yangluo-geol.github.io/tree/master/images/projects</code>
+    </li>
+    <li><strong>Test direct links:</strong>
       <ul>
-        <li>Files don't exist at the specified locations</li>
-        <li>Repository isn't properly connected to GitHub Pages</li>
+        <li><a href="https://raw.githubusercontent.com/yangluo-geol/yangluo-geol.github.io/master/images/projects/EBA1-CL-007.png" target="_blank">EBA1-CL-007.png</a></li>
+        <li><a href="https://raw.githubusercontent.com/yangluo-geol/yangluo-geol.github.io/master/images/projects/DP22-CL-015.png" target="_blank">DP22-CL-015.png</a></li>
       </ul>
     </li>
-    <li>If only Method 2 works:
+    <li><strong>GitHub Pages Settings:</strong>
       <ul>
-        <li>Your GitHub Pages build is failing</li>
-        <li>Try rebuilding: Settings → Pages → Build</li>
+        <li>Branch: <code>master</code></li>
+        <li>Folder: <code>/(root)</code></li>
       </ul>
     </li>
   </ol>
-</div>
-
 </div>

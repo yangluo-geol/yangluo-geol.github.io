@@ -16,7 +16,7 @@ baseurl: ""
 repository: "yangluo-geol/yangluo-geol.github.io"
 markdown: kramdown
 highlighter: rouge
-future: true
+future: false
 show_drafts: false
 
 # ========================
@@ -79,8 +79,8 @@ author:
   employer: "University of California, Santa Barbara"
   
   # Contact Information
-  # email: "yangluo@ucsb.edu"
-  # website: "https://yangluo-geol.github.io"
+  email: "yangluo@ucsb.edu"
+  website: "https://yangluo-geol.github.io"
   
   # Academic Profiles
   googlescholar: "https://scholar.google.com/citations?user=IOaZk2AAAAAJ"

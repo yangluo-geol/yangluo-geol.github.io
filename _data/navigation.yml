@@ -18,7 +18,12 @@ main:
     url: /teaching/    
     
   - title: "Projects"
-    url: /projects/  
+    url: /projects/
+    dropdown:
+      - title: "Zircon CL Imaging"
+        url: /projects/ # zircon-cl-imaging
+      -title: "Glacial Diamictites"
+        url: /projects/glacial-diamictites/
 
   - title: "Portfolio"
     url: /portfolio/

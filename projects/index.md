@@ -1,49 +1,102 @@
 ---
-title: "Research Projects"
+title: "Zircon Cathodoluminescence Imaging"
 layout: single
 permalink: /projects/
 ---
 
 <script>
-// Debugging script that logs image status
-document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('img');
+// Debugging tool - will show in browser console (F12)
+function verifyImages() {
+  const images = [
+    '/images/projects/EBA1-CL-007.png',
+    '/images/projects/EBA1-CL-015.png',
+    '/images/projects/DP22-CL-015.png',
+    '/images/projects/DP22-CL-025.png',
+    '/images/projects/DUIT3-CL-005.png',
+    '/images/projects/DUIT3-CL-008.png'
+  ];
+  
+  console.log('=== Image Verification ===');
   images.forEach(img => {
-    // Test if image loads
-    img.onload = () => console.log(`✅ Loaded: ${img.src}`);
-    img.onerror = () => console.log(`❌ Failed: ${img.src}`);
-    
-    // Force fresh load (bypass cache)
-    img.src = img.src + '?t=' + new Date().getTime();
+    const testImg = new Image();
+    testImg.onload = () => console.log(`✓ ${img} exists`);
+    testImg.onerror = () => console.log(`✗ ${img} MISSING`);
+    testImg.src = img;
   });
-});
+}
+document.addEventListener('DOMContentLoaded', verifyImages);
 </script>
 
-## Zircon CL Images (Live Test)
+<style>
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+.zircon-img {
+  width: 100%;
+  border: 1px solid #eaeaea;
+  padding: 5px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.debug-info {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  margin: 20px 0;
+  font-family: monospace;
+}
+</style>
+
+## Zircon CL Image Gallery
 
 ### Sample EBA1
-<!-- First image with backup option -->
-<picture>
-  <source srcset="https://yangluo-geol.github.io/images/projects/EBA1-CL-007.png" type="image/png">
-  <img src="https://yangluo-geol.github.io/images/projects/EBA1-CL-007.png" 
-       width="500" 
-       alt="EBA1 Zircon 007"
-       style="border:1px solid #ddd;background:white;padding:5px;">
-</picture>
+<div class="image-grid">
+  <img src="/images/projects/EBA1-CL-007.png" 
+       class="zircon-img" 
+       alt="EBA1 Zircon CL 007"
+       onerror="this.src='/assets/images/image-error.png'">
+  
+  <img src="/images/projects/EBA1-CL-015.png" 
+       class="zircon-img" 
+       alt="EBA1 Zircon CL 015"
+       onerror="this.src='/assets/images/image-error.png'">
+</div>
 
-<!-- Second image with direct link fallback -->
-<a href="https://yangluo-geol.github.io/images/projects/EBA1-CL-015.png" target="_blank">
-  <img src="https://yangluo-geol.github.io/images/projects/EBA1-CL-015.png" 
-       width="500" 
-       alt="EBA1 Zircon 015"
-       style="border:1px solid #ddd;background:white;padding:5px;margin-top:10px;">
-</a>
+### Sample DP22
+<div class="image-grid">
+  <img src="/images/projects/DP22-CL-015.png" 
+       class="zircon-img" 
+       alt="DP22 Zircon CL 015"
+       onerror="this.src='/assets/images/image-error.png'">
+  
+  <img src="/images/projects/DP22-CL-025.png" 
+       class="zircon-img" 
+       alt="DP22 Zircon CL 025"
+       onerror="this.src='/assets/images/image-error.png'">
+</div>
 
-### Debugging Instructions:
-1. Press **F12 → Console** to see which images load
-2. Click any image to open full version in new tab
-3. If you see "❌ Failed", check:
-   - Exact filename match (case-sensitive)
-   - File exists in `/images/projects/`
-   - No ad-blockers interfering
-</markdown>
+### Sample DUIT3
+<div class="image-grid">
+  <img src="/images/projects/DUIT3-CL-005.png" 
+       class="zircon-img" 
+       alt="DUIT3 Zircon CL 005"
+       onerror="this.src='/assets/images/image-error.png'">
+  
+  <img src="/images/projects/DUIT3-CL-008.png" 
+       class="zircon-img" 
+       alt="DUIT3 Zircon CL 008"
+       onerror="this.src='/assets/images/image-error.png'">
+</div>
+
+<div class="debug-info">
+  <strong>Troubleshooting:</strong>
+  <ol>
+    <li>Press <kbd>F12</kbd> → Console to see image verification results</li>
+    <li>Check exact filenames match (case-sensitive)</li>
+    <li>Images must be in <code>/images/projects/</code> folder</li>
+    <li>Wait 2 minutes after uploading new images</li>
+  </ol>
+</div>

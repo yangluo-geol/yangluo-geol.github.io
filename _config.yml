@@ -11,13 +11,12 @@ title_separator: "-"
 # ========================
 # Technical Configuration
 # ========================
-url: "https://yangluo-geol.github.io"
-baseurl: ""
-repository: "yangluo-geol/yangluo-geol.github.io"
-markdown: kramdown
-highlighter: rouge
-future: false
-show_drafts: false
+# url: "https://yangluo-geol.github.io"
+# baseurl: ""
+# repository: "yangluo-geol/yangluo-geol.github.io"markdown: kramdown
+# highlighter: rouge
+# future: false
+# show_drafts: false
 
 # ========================
 # Build Settings

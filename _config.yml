@@ -11,12 +11,12 @@ title_separator: "-"
 # ========================
 # Technical Configuration
 # ========================
-# url: "https://yangluo-geol.github.io"
-# baseurl: ""
-# repository: "yangluo-geol/yangluo-geol.github.io"markdown: kramdown
-# highlighter: rouge
-# future: false
-# show_drafts: false
+url: "https://yangluo-geol.github.io"
+baseurl: ""
+repository: "yangluo-geol/yangluo-geol.github.io"markdown: kramdown
+highlighter: rouge
+future: true
+show_drafts: false
 
 # ========================
 # Build Settings
@@ -78,14 +78,14 @@ author:
   employer: "University of California, Santa Barbara"
   
   # Contact Information
-  email: "yangluo@ucsb.edu"
+  # email: "yangluo@ucsb.edu"
   website: "https://yangluo-geol.github.io"
   
   # Academic Profiles
   googlescholar: "https://scholar.google.com/citations?user=IOaZk2AAAAAJ"
   
   # Social Media
-  github: "yangluo-geol"
+  # github: "yangluo-geol"
   linkedin: "yangluo-geol"  # Remove if not available
 
 # ========================

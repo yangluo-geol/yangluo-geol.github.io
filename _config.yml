@@ -45,7 +45,11 @@ collections:
     permalink: /publications/:year-:title/
     
   talks:
+    output: false
+    
+  projects:
     output: true
+
 
 # ========================
 # Default Values

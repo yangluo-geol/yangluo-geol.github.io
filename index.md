@@ -74,7 +74,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.15); /* lighter overlay for brighter background */
+  background: rgba(0,0,0,0); /* lighter overlay for brighter background */
   z-index: 0;
 }
 

@@ -1,4 +1,3 @@
----
 layout: home
 title: "Yang Luo - Geochemistry PhD Student"
 author_profile: true
@@ -17,6 +16,7 @@ author_profile: true
       <i class="ai ai-google-scholar"></i> Google Scholar
     </a>
   </div>
+  <div class="location-label">Nevada, U.S.</div>
 </div>
 
 <!-- ===== MAIN CONTENT ===== -->
@@ -78,8 +78,8 @@ body {
 }
 
 .profile-pic {
-  width: 160px;
-  height: 160px;
+  width: 220px; /* enlarged from 160px */
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid white;
@@ -90,7 +90,7 @@ body {
 }
 
 .hero-text {
-  max-width: 600px; /* wider to accommodate text */
+  max-width: 600px;
   margin-left: 2rem;
   z-index: 1;
   position: relative;
@@ -134,6 +134,19 @@ body {
   background: #e9ecef;
 }
 
+/* ===== Location label ===== */
+.location-label {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(0,0,0,0.5);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: white;
+  z-index: 2;
+}
+
 /* ===== MAIN CONTENT ===== */
 .main-content {
   display: flex;
@@ -148,7 +161,7 @@ body {
   padding: 1.5rem 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-  max-width: 750px; /* wider blocks for long words */
+  max-width: 750px;
   width: 100%;
 }
 
@@ -172,7 +185,7 @@ body {
 
 @media (max-width: 900px) {
   .hero-text {
-    max-width: 90%; /* responsive for mobile */
+    max-width: 90%;
     margin-left: 0;
   }
   .info-block {

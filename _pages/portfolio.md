@@ -82,7 +82,7 @@ permalink: /portfolio/
   </a>
 </div>
 
-<h1>animal images</h1>
+<h1>Animal images</h1>
 
 <div class="photo-grid">
   <a href="/assets/images/animal1.jpg" data-lightbox="field" data-title="Murphy">
@@ -126,7 +126,7 @@ permalink: /portfolio/
   </a>
 </div>
 
-<h1>plant images</h1>
+<h1>Plant images</h1>
 
 <div class="photo-grid">
   <a href="/assets/images/plant1.jpg" data-lightbox="field" data-title="plant1">

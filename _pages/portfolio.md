@@ -67,6 +67,29 @@ permalink: /portfolio/
   </a>
 </div>
 
+<h1>animals</h1>
+
+<div class="photo-grid">
+  <a href="/assets/images/animal1.jpg" data-lightbox="field" data-title="Murphy">
+    <img src="/assets/images/animal1.jpg" alt="Field Image 1">
+  </a>
+  <a href="/assets/images/animal2.jpg" data-lightbox="field" data-title="animal2">
+    <img src="/assets/images/animal2.jpg" alt="Field Image 2">
+  </a>
+  <a href="/assets/images/animal3.jpg" data-lightbox="field" data-title="animal3">
+    <img src="/assets/images/animal3.jpg" alt="Field Image 3">
+  </a>
+  <a href="/assets/images/animal4.jpg" data-lightbox="field" data-title="animal4">
+    <img src="/assets/images/animal4.jpg" alt="Field Image 4">
+  </a>
+  <a href="/assets/images/animal5.jpg" data-lightbox="field" data-title="animal5">
+    <img src="/assets/images/animal5.jpg" alt="Field Image 3">
+  </a>
+  <a href="/assets/images/animal6.jpg" data-lightbox="field" data-title="animal6">
+    <img src="/assets/images/animal6.jpg" alt="Field Image 4">
+  </a>
+</div>
+
 <style>
 h1 {
   text-align: center;

@@ -111,6 +111,50 @@ permalink: /portfolio/
   </a>
 </div>
 
+<h1>plants</h1>
+
+<div class="photo-grid">
+  <a href="/assets/images/plant1.jpg" data-lightbox="field" data-title="plant1">
+    <img src="/assets/images/plant1.jpg" alt="Field Image 1">
+  </a>
+  <a href="/assets/images/plant2.jpg" data-lightbox="field" data-title="plant2">
+    <img src="/assets/images/plant2.jpg" alt="Field Image 2">
+  </a>
+  <a href="/assets/images/plant3.jpg" data-lightbox="field" data-title="plant3">
+    <img src="/assets/images/plant3.jpg" alt="Field Image 3">
+  </a>
+  <a href="/assets/images/plant4.jpg" data-lightbox="field" data-title="plant4">
+    <img src="/assets/images/plant4.jpg" alt="Field Image 4">
+  </a>
+  <a href="/assets/images/plant5.jpg" data-lightbox="field" data-title="plant5">
+    <img src="/assets/images/plant5.jpg" alt="Field Image 3">
+  </a>
+  <a href="/assets/images/plant6.jpg" data-lightbox="field" data-title="plant6">
+    <img src="/assets/images/plant6.jpg" alt="Field Image 4">
+  </a>
+  <a href="/assets/images/plant7.jpg" data-lightbox="field" data-title="plant7">
+    <img src="/assets/images/plant7.jpg" alt="Field Image 1">
+  </a>
+  <a href="/assets/images/plant8.jpg" data-lightbox="field" data-title="plant8">
+    <img src="/assets/images/plant8.jpg" alt="Field Image 2">
+  </a>
+  <a href="/assets/images/plant9.jpg" data-lightbox="field" data-title="plant9">
+    <img src="/assets/images/plant9.jpg" alt="Field Image 3">
+  </a>
+  <a href="/assets/images/plant10.jpg" data-lightbox="field" data-title="plant10">
+    <img src="/assets/images/plant10.jpg" alt="Field Image 4">
+  </a>
+  <a href="/assets/images/plant11.jpg" data-lightbox="field" data-title="plant11">
+    <img src="/assets/images/plant11.jpg" alt="Field Image 3">
+  </a>
+  <a href="/assets/images/plant12.jpg" data-lightbox="field" data-title="plant12">
+    <img src="/assets/images/plant12.jpg" alt="Field Image 3">
+  </a>
+  <a href="/assets/images/plant13.jpg" data-lightbox="field" data-title="plant13">
+    <img src="/assets/images/plant13.jpg" alt="Field Image 4">
+  </a>
+</div>
+
 <style>
 h1 {
   text-align: center;

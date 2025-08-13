@@ -35,7 +35,7 @@ author_profile: true
     <ul>
       <li><span class="nowrap">Scanning Electron Microscope (SEM)</span></li>
       <li><span class="nowrap">Electron Microprobe Analysis (EPMA)</span></li>
-      <li><span class="nowrap">Laser Ablation ICP-MS</span></li>
+      <li><span class="nowrap">Laser Ablation Inductively Coupled Plasma Mass Spectrometry (LA-ICP-MS)</span></li>
     </ul>
   </section>
 </div>
@@ -64,8 +64,8 @@ body {
   flex-wrap: wrap;
   color: white;
   min-height: 100vh;
-  background: url('/assets/images/scenic1.jpg') no-repeat center center/cover,
-              url('/assets/images/scenic2.jpg') no-repeat center center/cover;
+  background: url('/assets/images/scenic2.jpg') no-repeat center center/cover,
+              url('/assets/images/scenic1.jpg') no-repeat center center/cover;
 }
 
 .hero-overlay {

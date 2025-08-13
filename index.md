@@ -64,8 +64,8 @@ body {
   flex-wrap: wrap;
   color: white;
   min-height: 100vh;
-  background: url('/assets/images/scenic1.jpg') no-repeat center center/cover,
-              url('/assets/images/scenic2.jpg') no-repeat center center/cover;
+  background: url('/assets/images/scenic2.jpg') no-repeat center center/cover,
+              url('/assets/images/scenic1.jpg') no-repeat center center/cover;
 }
 
 .hero-overlay {
@@ -74,7 +74,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.25); /* lighter overlay for brighter background */
+  background: rgba(0,0,0,0.15); /* lighter overlay for brighter background */
   z-index: 0;
 }
 

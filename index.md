@@ -10,33 +10,22 @@ author_profile: true
     <div class="profile-text">
       <h1>Yang Luo</h1>
       <h2>PhD Student in Geochemistry</h2>
+      <h3>Email: yangluo@ucsb.edu</h3>
       <p>Department of Earth Science<br>University of California, Santa Barbara</p>
     </div>
   </div>
-
-  <div class="profile-links">
-    <!-- Enhanced Email Button with Copy Functionality -->
-    <div class="email-wrapper">
-      <button onclick="copyEmail()" class="btn-email">
-        <i class="fas fa-envelope"></i> Email
-      </button>
-      <span id="emailTooltip" class="tooltip">Click to copy yangluo@ucsb.edu</span>
-    </div>
     
     <a href="https://scholar.google.com/citations?user=IOaZk2AAAAAJ" class="btn-scholar" target="_blank" rel="noopener noreferrer">
       <i class="ai ai-google-scholar"></i> Google Scholar
     </a>
-    <a href="https://github.com/yangluo-geol" class="btn-github" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-github"></i> GitHub
-    </a>
   </div>
 
   <div class="research-section">
-    <h3><i class="fas fa-microscope"></i> Research Focus</h3>
+    <h3><i class="fas fa-microscope"></i> Research </h3>
     <ul>
       <li>Petrology and mineralogy</li>
       <li>Geochronology</li>
-      <li>Plate tectonics and Crustal evolution</li>
+      <li>Plate tectonics and crustal evolution</li>
     </ul>
     
     <h3><i class="fas fa-flask"></i> Analytical Methods</h3>

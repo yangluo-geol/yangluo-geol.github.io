@@ -9,6 +9,31 @@ redirect_from:
 
 {% include base_path %}
 
+<!-- ===== DOWNLOAD CV LINK ===== -->
+<div class="cv-download" style="margin-bottom: 1.5rem;">
+  <a href="/assets/files/CV.pdf" download class="btn-download">
+    📄 Download My CV
+  </a>
+</div>
+
+<style>
+.btn-download {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #2a7ae2;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.btn-download:hover {
+  background-color: #1a5bb8;
+}
+</style>
+
+<!-- ===== CV CONTENT ===== -->
 Education
 ======
 * Ph.D. in Geochemistry, University of California, Santa Barbara, 2024-present
@@ -33,13 +58,12 @@ Skills
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
   
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+<ul>{% for post in site.teaching reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>

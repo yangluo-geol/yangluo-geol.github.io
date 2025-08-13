@@ -19,22 +19,25 @@ author_profile: true
   </div>
 </div>
 
-<div class="info-section">
-  <h3><i class="fas fa-microscope"></i> Research</h3>
-  <ul>
-    <li>Petrology and mineralogy</li>
-    <li>Geochronology</li>
-    <li>Plate tectonics and crustal evolution</li>
-  </ul>
-</div>
+<!-- Wrapper to center the two sections -->
+<div class="center-wrapper">
+  <div class="info-section">
+    <h3><i class="fas fa-microscope"></i> Research</h3>
+    <ul>
+      <li>Petrology and mineralogy</li>
+      <li>Geochronology</li>
+      <li>Plate tectonics and crustal evolution</li>
+    </ul>
+  </div>
 
-<div class="info-section">
-  <h3><i class="fas fa-flask"></i> Analytical Methods</h3>
-  <ul>
-    <li>Scanning Electron Microscope (SEM)</li>
-    <li>Electron Microprobe Analysis (EPMA)</li>
-    <li>Laser Ablation Inductively Coupled Plasma Mass Spectrometry (LA-ICP-MS)</li>
-  </ul>
+  <div class="info-section">
+    <h3><i class="fas fa-flask"></i> Analytical Methods</h3>
+    <ul>
+      <li>Scanning Electron Microscope (SEM)</li>
+      <li>Electron Microprobe Analysis (EPMA)</li>
+      <li>Laser Ablation Inductively Coupled Plasma Mass Spectrometry (LA-ICP-MS)</li>
+    </ul>
+  </div>
 </div>
 
 <style>
@@ -104,31 +107,36 @@ author_profile: true
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Info sections */
+/* Center wrapper for the two sections */
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
 .info-section {
   background: white;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin-top: 1.5rem;
+  max-width: 320px;
 }
 
 .info-section h3 {
   color: #2a7ae2;
   margin-top: 0;
   display: flex;
-  justify-content: center; /* Center heading horizontally */
   align-items: center;
   gap: 10px;
   font-size: 1.3rem;
-  text-align: center;
 }
 
 .info-section ul {
   list-style-position: inside;
   padding-left: 0;
   margin: 0;
-  text-align: left; /* Keep list left-aligned */
 }
 
 .info-section li {
@@ -139,6 +147,10 @@ author_profile: true
   .profile-header {
     flex-direction: column;
     text-align: center;
+  }
+  .center-wrapper {
+    flex-direction: column;
+    align-items: center;
   }
 }
 </style>

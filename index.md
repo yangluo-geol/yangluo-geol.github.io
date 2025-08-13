@@ -15,26 +15,25 @@ author_profile: true
     </div>
   </div>
     
-    <a href="https://scholar.google.com/citations?user=IOaZk2AAAAAJ" class="btn-scholar" target="_blank" rel="noopener noreferrer">
-      <i class="ai ai-google-scholar"></i> Google Scholar
-    </a>
-  </div>
+  <a href="https://scholar.google.com/citations?user=IOaZk2AAAAAJ" class="btn-scholar" target="_blank" rel="noopener noreferrer">
+    <i class="ai ai-google-scholar"></i> Google Scholar
+  </a>
+</div>
 
-  <div class="research-section">
-    <h3><i class="fas fa-microscope"></i> Research </h3>
-    <ul>
-      <li>Petrology and mineralogy</li>
-      <li>Geochronology</li>
-      <li>Plate tectonics and crustal evolution</li>
-    </ul>
-    
-    <h3><i class="fas fa-flask"></i> Analytical Methods</h3>
-    <ul>
-      <li>Scanning Electron Microscope (SEM)</li>
-      <li>Electron Microprobe Analysis (EPMA)</li>
-      <li>Laser Ablation Inductively Coupled Plasma Mass Spectrometry (LA-ICP-MS)</li>
-    </ul>
-  </div>
+<div class="research-section">
+  <h3><i class="fas fa-microscope"></i> Research </h3>
+  <ul>
+    <li>Petrology and mineralogy</li>
+    <li>Geochronology</li>
+    <li>Plate tectonics and crustal evolution</li>
+  </ul>
+  
+  <h3><i class="fas fa-flask"></i> Analytical Methods</h3>
+  <ul>
+    <li>Scanning Electron Microscope (SEM)</li>
+    <li>Electron Microprobe Analysis (EPMA)</li>
+    <li>Laser Ablation Inductively Coupled Plasma Mass Spectrometry (LA-ICP-MS)</li>
+  </ul>
 </div>
 
 <style>
@@ -81,35 +80,6 @@ author_profile: true
   line-height: 1.5;
 }
 
-.profile-links {
-  display: flex;
-  gap: 1rem;
-  margin: 2rem 0;
-  flex-wrap: wrap;
-}
-
-/* Email Button Styles */
-.email-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.btn-email {
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  color: white;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  background: linear-gradient(135deg, #d44638, #c53727);
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
 .btn-scholar {
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
@@ -123,82 +93,36 @@ author_profile: true
   background: linear-gradient(135deg, #4285F4, #3367D6);
 }
 
-.btn-github {
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  color: white;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  background: linear-gradient(135deg, #333, #222);
-}
-
-.btn-email:hover, .btn-scholar:hover, .btn-github:hover {
+.btn-scholar:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Tooltip Styles */
-.tooltip {
-  visibility: hidden;
-  width: 180px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 10px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-  font-size: 0.9rem;
-  font-weight: normal;
-}
-
-.tooltip::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #333 transparent transparent transparent;
-}
-
-.email-wrapper:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* Research Section */
+/* Centered Research Section */
 .research-section {
   background: white;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   margin-top: 1.5rem;
+  text-align: center;
 }
 
 .research-section h3 {
   color: #2a7ae2;
   margin-top: 0;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
   font-size: 1.25rem;
 }
 
 .research-section ul {
-  padding-left: 1.5rem;
-  line-height: 1.7;
-  margin-bottom: 0;
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0 auto 1rem;
+  display: inline-block;
+  text-align: left;
 }
 
 .research-section li {
@@ -218,10 +142,6 @@ author_profile: true
     height: 140px;
   }
   
-  .profile-links {
-    justify-content: center;
-  }
-  
   .profile-text h1 {
     font-size: 2rem;
   }
@@ -233,7 +153,6 @@ function copyEmail() {
   const email = 'yangluo@ucsb.edu';
   const tooltip = document.getElementById('emailTooltip');
   
-  // Try modern clipboard API first
   if (navigator.clipboard) {
     navigator.clipboard.writeText(email)
       .then(() => {
@@ -250,7 +169,6 @@ function copyEmail() {
   }
   
   function fallbackEmail() {
-    // Fallback for older browsers
     const textarea = document.createElement('textarea');
     textarea.value = email;
     textarea.style.position = 'fixed';

@@ -19,7 +19,7 @@ author_profile: true
   </div>
 </div>
 
-<!-- Wrapper to center the two sections -->
+<!-- Centered vertically stacked sections -->
 <div class="center-wrapper">
   <div class="info-section">
     <h3><i class="fas fa-microscope"></i> Research</h3>
@@ -107,11 +107,11 @@ author_profile: true
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Center wrapper for the two sections */
+/* Center vertically stacked sections */
 .center-wrapper {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -122,6 +122,7 @@ author_profile: true
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   max-width: 320px;
+  width: 100%;
 }
 
 .info-section h3 {
@@ -147,10 +148,6 @@ author_profile: true
   .profile-header {
     flex-direction: column;
     text-align: center;
-  }
-  .center-wrapper {
-    flex-direction: column;
-    align-items: center;
   }
 }
 </style>

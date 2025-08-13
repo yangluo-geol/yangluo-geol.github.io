@@ -7,7 +7,7 @@ author_profile: true
 <!-- ===== HERO SECTION ===== -->
 <div class="hero">
   <div class="hero-overlay"></div>
-  <img src="/assets/images/profile.jpg" alt="Yang Luo" class="profile-pic">
+  <img src="/assets/images/profile2.jpg" alt="Yang Luo" class="profile-pic">
   <div class="hero-text">
     <h1>Yang Luo</h1>
     <h2>PhD Student in Geochemistry</h2>
@@ -64,8 +64,8 @@ body {
   flex-wrap: wrap;
   color: white;
   min-height: 100vh;
-  background: url('/assets/images/scenic2.jpg') no-repeat center center/cover,
-              url('/assets/images/scenic1.jpg') no-repeat center center/cover;
+  background: url('/assets/images/scenic1.jpg') no-repeat center center/cover,
+              url('/assets/images/scenic2.jpg') no-repeat center center/cover;
 }
 
 .hero-overlay {

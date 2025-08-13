@@ -88,6 +88,27 @@ permalink: /portfolio/
   <a href="/assets/images/animal6.jpg" data-lightbox="field" data-title="animal6">
     <img src="/assets/images/animal6.jpg" alt="Field Image 4">
   </a>
+  <a href="/assets/images/animal7.jpg" data-lightbox="field" data-title="animal7">
+    <img src="/assets/images/animal7.jpg" alt="Field Image 1">
+  </a>
+  <a href="/assets/images/animal8.jpg" data-lightbox="field" data-title="animal8">
+    <img src="/assets/images/animal8.jpg" alt="Field Image 2">
+  </a>
+  <a href="/assets/images/animal9.jpg" data-lightbox="field" data-title="animal9">
+    <img src="/assets/images/animal9.jpg" alt="Field Image 3">
+  </a>
+  <a href="/assets/images/animal10.jpg" data-lightbox="field" data-title="animal10">
+    <img src="/assets/images/animal10.jpg" alt="Field Image 4">
+  </a>
+  <a href="/assets/images/animal11.jpg" data-lightbox="field" data-title="animal11">
+    <img src="/assets/images/animal11.jpg" alt="Field Image 3">
+  </a>
+  <a href="/assets/images/animal12.jpg" data-lightbox="field" data-title="animal12">
+    <img src="/assets/images/animal12.jpg" alt="Field Image 3">
+  </a>
+  <a href="/assets/images/animal13.jpg" data-lightbox="field" data-title="animal13">
+    <img src="/assets/images/animal13.jpg" alt="Field Image 4">
+  </a>
 </div>
 
 <style>

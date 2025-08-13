@@ -11,7 +11,7 @@ redirect_from:
 
 <!-- ===== DOWNLOAD CV LINK ===== -->
 <div class="cv-download" style="margin-bottom: 1.5rem;">
-  <a href="/assets/files/CV.pdf" download class="btn-download">
+  <a href="/files/CV.pdf" download class="btn-download">
     📄 Download My CV
   </a>
 </div>

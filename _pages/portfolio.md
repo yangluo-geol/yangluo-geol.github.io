@@ -65,6 +65,21 @@ permalink: /portfolio/
   <a href="/assets/images/field4.jpg" data-lightbox="field" data-title="Field Image 4">
     <img src="/assets/images/field4.jpg" alt="Field Image 4">
   </a>
+   <a href="/assets/images/field5.jpg" data-lightbox="field" data-title="Field Image 5">
+    <img src="/assets/images/field5.jpg" alt="Field Image 1">
+  </a>
+  <a href="/assets/images/field6.jpg" data-lightbox="field" data-title="Field Image 6">
+    <img src="/assets/images/field6.jpg" alt="Field Image 2">
+  </a>
+  <a href="/assets/images/field7.jpg" data-lightbox="field" data-title="Field Image 7">
+    <img src="/assets/images/field7.jpg" alt="Field Image 3">
+  </a>
+  <a href="/assets/images/field8.jpg" data-lightbox="field" data-title="Field Image 8">
+    <img src="/assets/images/field8.jpg" alt="Field Image 4">
+  </a>
+  <a href="/assets/images/field9.jpg" data-lightbox="field" data-title="Field Image 9">
+    <img src="/assets/images/field9.jpg" alt="Field Image 4">
+  </a>
 </div>
 
 <h1>animal images</h1>

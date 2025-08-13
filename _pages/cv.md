@@ -77,7 +77,7 @@ ul ul {
       <ul>
         <li>Chengdu University of Technology</li>
         <li>Duties included: Collecting data and writing report</li>
-        <li>Supervisor: Professor Xiong</li>
+        <li>Supervisor: Professor Fuhao Xiong</li>
       </ul>
     </li>
   </ul>

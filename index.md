@@ -6,6 +6,7 @@ author_profile: true
 
 <!-- ===== HERO SECTION ===== -->
 <div class="hero">
+  <div class="hero-overlay"></div>
   <img src="/assets/images/profile.jpg" alt="Yang Luo" class="profile-pic">
   <div class="hero-text">
     <h1>Yang Luo</h1>
@@ -54,14 +55,27 @@ body {
 
 /* ===== HERO ===== */
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 3rem 1rem;
-  background: linear-gradient(135deg, #2a7ae2, #0056b3);
-  color: white;
   text-align: center;
   flex-wrap: wrap;
+  color: white;
+  min-height: 100vh;
+  background: url('/assets/images/scenic1.jpg') no-repeat center center/cover,
+              url('/assets/images/scenic2.jpg') no-repeat center center/cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45); /* dark overlay for readability */
+  z-index: 0;
 }
 
 .profile-pic {
@@ -72,11 +86,15 @@ body {
   border: 4px solid white;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   margin-bottom: 1rem;
+  z-index: 1;
+  position: relative;
 }
 
 .hero-text {
   max-width: 500px;
   margin-left: 2rem;
+  z-index: 1;
+  position: relative;
 }
 
 .hero h1 {

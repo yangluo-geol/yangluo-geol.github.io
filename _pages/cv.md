@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D. in Geochemistry, University of California, Santa Barbara, 2024-now
+* Ph.D. in Geochemistry, University of California, Santa Barbara, 2024-present
 * M.S. in Mineralogy, Petrology, Mineral Deposit Geology, University of Chinese Academy of Sciences, 2021-2024
 * B.S. in Geology, Chengdu University of Technology, 2016-2020
 

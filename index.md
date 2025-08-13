@@ -1,3 +1,4 @@
+---
 layout: home
 title: "Yang Luo - Geochemistry PhD Student"
 author_profile: true

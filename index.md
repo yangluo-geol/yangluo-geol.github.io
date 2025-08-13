@@ -18,29 +18,28 @@ author_profile: true
   </div>
 </div>
 
-<!-- ===== CONTENT SECTIONS ===== -->
-<div class="content-sections">
-  <div class="card">
+<!-- ===== MAIN CONTENT ===== -->
+<div class="main-content">
+  <section class="info-block">
     <h3><i class="fas fa-microscope"></i> Research</h3>
     <ul>
       <li>Petrology and mineralogy</li>
       <li>Geochronology</li>
       <li>Plate tectonics and crustal evolution</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="card">
+  <section class="info-block">
     <h3><i class="fas fa-flask"></i> Analytical Methods</h3>
     <ul>
       <li><span class="nowrap">Scanning Electron Microscope (SEM)</span></li>
       <li><span class="nowrap">Electron Microprobe Analysis (EPMA)</span></li>
       <li><span class="nowrap">Laser Ablation ICP-MS</span></li>
     </ul>
-  </div>
+  </section>
 </div>
 
 <style>
-/* ===== GLOBAL ===== */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background: #f8f9fa;
@@ -49,12 +48,11 @@ body {
   color: #333;
 }
 
-/* Prevent breaking inside .nowrap spans */
 .nowrap {
   white-space: nowrap;
 }
 
-/* ===== HERO SECTION ===== */
+/* ===== HERO ===== */
 .hero {
   display: flex;
   align-items: center;
@@ -119,30 +117,25 @@ body {
   background: #e9ecef;
 }
 
-/* ===== CONTENT SECTIONS ===== */
-.content-sections {
+/* ===== MAIN CONTENT ===== */
+.main-content {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem 1rem;
-  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-.card {
+.info-block {
   background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  width: 280px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  max-width: 600px;
+  width: 100%;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
-}
-
-.card h3 {
+.info-block h3 {
   color: #2a7ae2;
   display: flex;
   align-items: center;
@@ -150,13 +143,13 @@ body {
   margin-top: 0;
 }
 
-.card ul {
+.info-block ul {
   list-style-position: inside;
   padding: 0;
   margin: 0.5rem 0 0 0;
 }
 
-.card li {
+.info-block li {
   margin: 0.4rem 0;
 }
 

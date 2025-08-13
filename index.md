@@ -19,7 +19,7 @@ author_profile: true
   </div>
 </div>
 
-<div class="info-section">
+<div class="info-section left-aligned">
   <h3><i class="fas fa-microscope"></i> Research</h3>
   <ul>
     <li>Petrology and mineralogy</li>
@@ -28,7 +28,7 @@ author_profile: true
   </ul>
 </div>
 
-<div class="info-section">
+<div class="info-section left-aligned">
   <h3><i class="fas fa-flask"></i> Analytical Methods</h3>
   <ul>
     <li>Scanning Electron Microscope (SEM)</li>
@@ -133,6 +133,20 @@ author_profile: true
 
 .info-section li {
   margin-bottom: 0.5rem;
+}
+
+/* Override for left-aligned sections */
+.left-aligned {
+  text-align: left;
+}
+
+.left-aligned h3 {
+  display: flex;
+}
+
+.left-aligned ul {
+  display: block;
+  margin-left: 1.5rem;
 }
 
 @media (max-width: 700px) {

@@ -74,7 +74,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.45); /* dark overlay for readability */
+  background: rgba(0,0,0,0.25); /* lighter overlay for brighter background */
   z-index: 0;
 }
 
@@ -91,7 +91,7 @@ body {
 }
 
 .hero-text {
-  max-width: 500px;
+  max-width: 600px; /* wider to accommodate text */
   margin-left: 2rem;
   z-index: 1;
   position: relative;
@@ -149,7 +149,7 @@ body {
   padding: 1.5rem 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-  max-width: 600px;
+  max-width: 750px; /* wider blocks for long words */
   width: 100%;
 }
 
@@ -171,13 +171,20 @@ body {
   margin: 0.4rem 0;
 }
 
+@media (max-width: 900px) {
+  .hero-text {
+    max-width: 90%; /* responsive for mobile */
+    margin-left: 0;
+  }
+  .info-block {
+    max-width: 90%;
+  }
+}
+
 @media (max-width: 700px) {
   .hero {
     flex-direction: column;
     text-align: center;
-  }
-  .hero-text {
-    margin-left: 0;
   }
 }
 </style>

@@ -27,6 +27,23 @@ permalink: /portfolio/
   </a>
 </div>
 
+<h1>Thin section images</h1>
+
+<div class="photo-grid">
+  <a href="/assets/images/thin-section1.jpg" data-lightbox="field" data-title="Field Image 1">
+    <img src="/assets/images/field1.jpg" alt="Field Image 1">
+  </a>
+  <a href="/assets/images/thin-section2.jpg" data-lightbox="field" data-title="Field Image 2">
+    <img src="/assets/images/thin-section2.jpg" alt="Field Image 2">
+  </a>
+  <a href="/assets/images/thin-section3.jpg" data-lightbox="field" data-title="Field Image 3">
+    <img src="/assets/images/thin-section3.jpg" alt="Field Image 3">
+  </a>
+  <a href="/assets/images/thin-section4.jpg" data-lightbox="field" data-title="Field Image 4">
+    <img src="/assets/images/thin-section4.jpg" alt="Field Image 4">
+  </a>
+</div>
+
 <h1>Field images</h1>
 
 <div class="photo-grid">

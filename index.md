@@ -32,9 +32,9 @@ author_profile: true
   <div class="card">
     <h3><i class="fas fa-flask"></i> Analytical Methods</h3>
     <ul>
-      <li>Scanning Electron Microscope (SEM)</li>
-      <li>Electron Microprobe Analysis (EPMA)</li>
-      <li>Laser Ablation ICP-MS</li>
+      <li><span class="nowrap">Scanning Electron Microscope (SEM)</span></li>
+      <li><span class="nowrap">Electron Microprobe Analysis (EPMA)</span></li>
+      <li><span class="nowrap">Laser Ablation ICP-MS</span></li>
     </ul>
   </div>
 </div>
@@ -47,6 +47,11 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+}
+
+/* Prevent breaking inside .nowrap spans */
+.nowrap {
+  white-space: nowrap;
 }
 
 /* ===== HERO SECTION ===== */

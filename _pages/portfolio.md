@@ -153,6 +153,9 @@ permalink: /portfolio/
   <a href="/assets/images/plant13.jpg" data-lightbox="field" data-title="plant13">
     <img src="/assets/images/plant13.jpg" alt="Field Image 4">
   </a>
+  <a href="/assets/images/plant14.jpg" data-lightbox="field" data-title="plant14">
+    <img src="/assets/images/plant14.jpg" alt="Field Image 4">
+  </a>
 </div>
 
 <style>

@@ -30,22 +30,22 @@ permalink: /portfolio/
 <h1>Thin section images</h1>
 
 <div class="photo-grid">
-  <a href="/assets/images/thin-section1.jpg" data-lightbox="field" data-title="Field Image 1">
+  <a href="/assets/images/thin-section1.jpg" data-lightbox="field" data-title="Kyanite in ppl">
     <img src="/assets/images/thin-section1.jpg" alt="Field Image 1">
   </a>
-  <a href="/assets/images/thin-section2.jpg" data-lightbox="field" data-title="Field Image 2">
+  <a href="/assets/images/thin-section2.jpg" data-lightbox="field" data-title="Kyanite in xpl">
     <img src="/assets/images/thin-section2.jpg" alt="Field Image 2">
   </a>
-  <a href="/assets/images/thin-section3.jpg" data-lightbox="field" data-title="Field Image 3">
+  <a href="/assets/images/thin-section3.jpg" data-lightbox="field" data-title="Coesite in ppl">
     <img src="/assets/images/thin-section3.jpg" alt="Field Image 3">
   </a>
-  <a href="/assets/images/thin-section4.jpg" data-lightbox="field" data-title="Field Image 4">
+  <a href="/assets/images/thin-section4.jpg" data-lightbox="field" data-title="Coesite in xpl">
     <img src="/assets/images/thin-section4.jpg" alt="Field Image 4">
   </a>
-  <a href="/assets/images/thin-section5.jpg" data-lightbox="field" data-title="Field Image 3">
+  <a href="/assets/images/thin-section5.jpg" data-lightbox="field" data-title="Sillimanite in ppl">
     <img src="/assets/images/thin-section5.jpg" alt="Field Image 3">
   </a>
-  <a href="/assets/images/thin-section6.jpg" data-lightbox="field" data-title="Field Image 4">
+  <a href="/assets/images/thin-section6.jpg" data-lightbox="field" data-title="Sillimanite in xpl">
     <img src="/assets/images/thin-section6.jpg" alt="Field Image 4">
   </a>
 </div>

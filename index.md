@@ -7,7 +7,7 @@ author_profile: true
 <!-- ===== HERO SECTION ===== -->
 <div class="hero">
   <div class="hero-overlay"></div>
-  <img src="/assets/images/profile4.jpg" alt="Yang Luo" class="profile-pic">
+  <img src="/assets/images/profile5.jpg" alt="Yang Luo" class="profile-pic">
   <div class="hero-text">
     <h1>Yang Luo</h1>
     <h2>PhD Student in Geochemistry</h2>
